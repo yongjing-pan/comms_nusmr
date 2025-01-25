@@ -2,7 +2,7 @@ import sys
 import cv2
 import time
 from PyQt5.QtWidgets import (
-    QApplication, QMainWindow, QVBoxLayout, QPushButton, QLabel, QSlider, QHBoxLayout, QLineEdit, QWidget
+    QApplication, QMainWindow, QVBoxLayout, QPushButton, QLabel, QSlider, QHBoxLayout, QLineEdit, QWidget, QComboBox
 )
 from PyQt5.QtCore import Qt, QThread, pyqtSignal
 from PyQt5.QtGui import QImage, QPixmap
@@ -73,6 +73,14 @@ class SubsectionWindow(QWidget):
         self.bandwidth_display.setMaximumWidth(150)
         self.controls_layout.addWidget(self.bandwidth_display)
 
+        # Camera selection dropdown
+        self.camera_selector = QComboBox(self)
+        self.camera_selector.addItem("Default Camera (0)")
+        self.camera_selector.addItem("USB Camera (1)")
+        self.camera_selector.addItem("USB Camera (2)")
+        self.controls_layout.addWidget(QLabel("Select Camera:"))
+        self.controls_layout.addWidget(self.camera_selector)
+
         # Camera feed and thread management
         self.is_feed_on = False
         self.cap = None
@@ -89,7 +97,8 @@ class SubsectionWindow(QWidget):
     def start_feed(self):
         """ Start the video feed """
         if self.cap is None:
-            self.cap = cv2.VideoCapture(0)
+            selected_camera = self.camera_selector.currentIndex()  # Get selected camera index
+            self.cap = cv2.VideoCapture(selected_camera)
             if not self.cap.isOpened():
                 print("Failed to open camera.")
                 self.cap = None
