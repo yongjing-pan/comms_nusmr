@@ -2,7 +2,7 @@ import sys
 import cv2
 import time
 from PyQt5.QtWidgets import (
-    QApplication, QMainWindow, QVBoxLayout, QPushButton, QLabel, QSlider, QHBoxLayout, QLineEdit, QWidget, QComboBox
+    QApplication, QMainWindow, QVBoxLayout, QPushButton, QLabel, QSlider, QHBoxLayout, QLineEdit, QWidget
 )
 from PyQt5.QtCore import Qt, QThread, pyqtSignal
 from PyQt5.QtGui import QImage, QPixmap
@@ -24,21 +24,49 @@ class MainWindow(QMainWindow):
         self.add_subsection_button.clicked.connect(self.add_subsection)
         self.layout.addWidget(self.add_subsection_button)
 
+        # Track open camera indices
+        self.open_cameras = set()
+
         # Track subsection windows
         self.subsection_windows = []
 
     def add_subsection(self):
-        """ Create and show a new subsection window """
-        subsection_window = SubsectionWindow()
+        """ Create and show a new subsection window for an available camera """
+        available_camera = self.get_available_camera()
+        if available_camera is None:
+            print("No available cameras left.")
+            return
+
+        # Create a new subsection window for the available camera
+        print(f"Adding subsection for Camera {available_camera + 1}")
+        subsection_window = SubsectionWindow(available_camera)
         subsection_window.show()
+        subsection_window.closed.connect(self.on_subsection_closed)
         self.subsection_windows.append(subsection_window)
+
+    def get_available_camera(self):
+        """ Get an available camera index that is not currently open """
+        for camera_index in range(10):  # Assuming a maximum of 10 cameras to check
+            if camera_index not in self.open_cameras:
+                self.open_cameras.add(camera_index)
+                return camera_index
+        return None
+
+    def on_subsection_closed(self, camera_index):
+        """ Update the list of open cameras when a subsection is closed """
+        self.open_cameras.remove(camera_index)
+        print(f"Camera {camera_index + 1} is now available.")
 
 
 class SubsectionWindow(QWidget):
-    def __init__(self):
+    closed = pyqtSignal(int)  # Signal emitted when the window is closed
+
+    def __init__(self, camera_index):
         super().__init__()
-        self.setWindowTitle("Subsection")
+        self.setWindowTitle(f"Camera {camera_index + 1}")
         self.setGeometry(150, 150, 640, 480)
+
+        self.camera_index = camera_index
 
         # Main layout
         self.layout = QVBoxLayout(self)
@@ -73,14 +101,6 @@ class SubsectionWindow(QWidget):
         self.bandwidth_display.setMaximumWidth(150)
         self.controls_layout.addWidget(self.bandwidth_display)
 
-        # Camera selection dropdown
-        self.camera_selector = QComboBox(self)
-        self.camera_selector.addItem("Default Camera (0)")
-        self.camera_selector.addItem("USB Camera (1)")
-        self.camera_selector.addItem("USB Camera (2)")
-        self.controls_layout.addWidget(QLabel("Select Camera:"))
-        self.controls_layout.addWidget(self.camera_selector)
-
         # Camera feed and thread management
         self.is_feed_on = False
         self.cap = None
@@ -97,10 +117,10 @@ class SubsectionWindow(QWidget):
     def start_feed(self):
         """ Start the video feed """
         if self.cap is None:
-            selected_camera = self.camera_selector.currentIndex()  # Get selected camera index
-            self.cap = cv2.VideoCapture(selected_camera)
+            print(f"Opening camera {self.camera_index + 1}")
+            self.cap = cv2.VideoCapture(self.camera_index)
             if not self.cap.isOpened():
-                print("Failed to open camera.")
+                print(f"Failed to open camera {self.camera_index + 1}.")
                 self.cap = None
                 return
 
@@ -174,8 +194,9 @@ class SubsectionWindow(QWidget):
         self.bandwidth_display.setText(f"{bandwidth:.2f} KB/s")
 
     def closeEvent(self, event):
-        """ Cleanup resources when closing the window """
-        self.stop_feed()
+        """ Emit signal when the window is closed """
+        print(f"Subsection for Camera {self.camera_index + 1} is closing.")
+        self.closed.emit(self.camera_index)
         super().closeEvent(event)
 
 
@@ -218,7 +239,15 @@ class CaptureThread(QThread):
 
 
 if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    main_window = MainWindow()
-    main_window.show()
-    sys.exit(app.exec_())
+    try:
+        app = QApplication(sys.argv)
+        main_window = MainWindow()
+        main_window.show()
+        sys.exit(app.exec_())
+    except Exception as e:
+        print(f"Error in launching the application: {e}")
+
+            
+
+
+ 
