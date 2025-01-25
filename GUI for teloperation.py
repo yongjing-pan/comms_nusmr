@@ -123,39 +123,42 @@ class SubsectionWindow(QWidget):
         if self.capture_thread:
             self.capture_thread.resolution = self.resolution
 
-def display_frame(self, frame):
-    """ Update the video display with the latest frame """
-    if frame is None:
-        return  # Safeguard against invalid frames
+    def display_frame(self, frame):
+        """ Update the video display with the latest frame """
+        try:
+            if frame is None or frame.size == 0:
+                print("Received invalid frame.")
+                return  # Skip processing invalid frames
 
-    rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-    h, w, ch = rgb_frame.shape
-    bytes_per_line = ch * w
-    qt_image = QImage(rgb_frame.data, w, h, bytes_per_line, QImage.Format_RGB888)
-    pixmap = QPixmap.fromImage(qt_image)
+            rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            h, w, ch = rgb_frame.shape
+            bytes_per_line = ch * w
+            qt_image = QImage(rgb_frame.data, w, h, bytes_per_line, QImage.Format_RGB888)
+            pixmap = QPixmap.fromImage(qt_image)
 
-    # Adjust QLabel to maintain correct aspect ratio
-    label_width = self.video_display.width()
-    label_height = self.video_display.height()
-    aspect_ratio_frame = w / h
-    aspect_ratio_label = label_width / label_height
+            # Maintain aspect ratio while scaling to QLabel's size
+            label_width = self.video_display.width()
+            label_height = self.video_display.height()
+            aspect_ratio_frame = w / h
+            aspect_ratio_label = label_width / label_height
 
-    if aspect_ratio_frame > aspect_ratio_label:
-        # Constrain by width
-        scaled_width = label_width
-        scaled_height = int(label_width / aspect_ratio_frame)
-    else:
-        # Constrain by height
-        scaled_height = label_height
-        scaled_width = int(label_height * aspect_ratio_frame)
+            if aspect_ratio_frame > aspect_ratio_label:
+                # Constrain by width
+                scaled_width = label_width
+                scaled_height = int(label_width / aspect_ratio_frame)
+            else:
+                # Constrain by height
+                scaled_height = label_height
+                scaled_width = int(label_height * aspect_ratio_frame)
 
-    # Scale pixmap and update QLabel
-    self.video_display.setPixmap(pixmap.scaled(
-        scaled_width, scaled_height,
-        Qt.KeepAspectRatio, Qt.SmoothTransformation
-    ))
+            # Apply scaled pixmap to QLabel
+            self.video_display.setPixmap(pixmap.scaled(
+                scaled_width, scaled_height,
+                Qt.KeepAspectRatio, Qt.SmoothTransformation
+            ))
 
-
+        except Exception as e:
+            print(f"Error in display_frame: {e}")
 
     def update_bandwidth(self, bandwidth):
         """ Update the bandwidth display """
