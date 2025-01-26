@@ -2,7 +2,7 @@ import subprocess
 import signal
 import sys
 
-#infact can just run these instead of everything else.
+#infact can just run these instead of everything else. However call() blocks anything else from running so Popen is still better for our purposes.
 
 command = "ffmpeg -f v4l2 -framerate 15 -video_size 640x480 -pixel_format mjpeg -i /dev/video1 -c:v libx264 -b:v 1.3M -preset ultrafast -tune zerolatency -f mpegts -flush_packets 0 -bufsize 2M -probesize 32M - | ffplay -fflags nobuffer -flags low_delay -i -"
 subprocess.call(command, shell=True)
