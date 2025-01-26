@@ -16,7 +16,7 @@ ffplay_command = [
 
 process_ffplay = subprocess.Popen(ffplay_command, stdin=process_ffmpeg.stdout)
 
-def signal_handler(sig, frame):
+def signal_handler():
     print("Interrupt received, stopping stream.")
     process_ffmpeg.terminate()
     process_ffplay.terminate()
