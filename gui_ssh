@@ -1,0 +1,161 @@
+import sys
+import subprocess
+import threading
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton, QComboBox, QLineEdit
+from PyQt5.QtGui import QIntValidator 
+import paramiko
+
+# Function to send bash commands to the rover
+def send_bash_command_via_ssh(command):
+    ssh = paramiko.SSHClient()
+    ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    ssh.connect('192.168.18.5', username='your_username', password='your_password')
+    stdin, stdout, stderr = ssh.exec_command(command)
+    print(stdout.read().decode())
+    ssh.close()
+
+# Function to start and display video stream using ffplay
+def display_video(stream_url, stream_id):
+    ffplay_command = f"ffplay -fflags nobuffer -flags low_delay -i {stream_url} -window_title 'Stream {stream_id}'"
+    process = subprocess.Popen(ffplay_command, shell=True)
+    return process
+
+# Function to update video stream settings (e.g., resolution, bitrate)
+def update_video_settings(resolution, bitrate):
+    bash_command = f"bash set_video_settings.sh --resolution {resolution} --bitrate {bitrate}"
+
+    # Send the bash command to the rover
+    threading.Thread(target=send_bash_command_via_ssh, args=(bash_command,)).start()
+
+# Function to stop the video stream using the process ID
+def stop_video_stream(process):
+    if process:
+        process.terminate()  # Terminate the process
+
+# Main window class
+class MarsRoverGUI(QWidget):
+    def __init__(self):
+        super().__init__()
+
+        # Set up the window
+        self.setWindowTitle("Mars Rover Video Stream Viewer")
+        self.setGeometry(100, 100, 1200, 600)
+
+        # Main Layout (Vertical stack for the whole window)
+        self.main_layout = QVBoxLayout(self)
+
+        # Stream controls (Vertical stack)
+        self.stream_controls = []
+
+        # Create labels and settings for each stream
+        self.stream_processes = {}  # Store process for each stream
+
+        for i in range(1, 4):
+            stream_widget = self.create_stream_widget(i)
+            self.stream_controls.append(stream_widget)
+            self.main_layout.addWidget(stream_widget)
+
+        self.current_processes = {}  # To track running processes
+
+    def create_stream_widget(self, stream_id):
+        # Stream control widget (Vertical stack for each stream)
+        stream_widget = QWidget(self)
+        stream_layout = QVBoxLayout()
+
+        # Stream label
+        stream_label = QLabel(f"Stream {stream_id}")
+        stream_layout.addWidget(stream_label)
+
+        # Dropdown for resolution
+        resolution_label = QLabel(f"Stream {stream_id} Resolution:")
+        resolution_combo = QComboBox(self)
+        resolution_combo.addItems(["640x480", "1280x720", "1920x1080"])
+        stream_layout.addWidget(resolution_label)
+        stream_layout.addWidget(resolution_combo)
+
+        # Integer input for bitrate
+        bitrate_label = QLabel(f"Stream {stream_id} Bitrate (kbps):")
+        bitrate_input = QLineEdit(self)
+        bitrate_input.setValidator(QIntValidator(1, 10000))  # Allow integer values between 1 and 10000 kbps
+        bitrate_input.setPlaceholderText("Enter bitrate in kbps")
+        stream_layout.addWidget(bitrate_label)
+        stream_layout.addWidget(bitrate_input)
+
+        # Start button to start the stream
+        start_button = QPushButton(f"Start Stream {stream_id}", self)
+        start_button.clicked.connect(lambda: self.start_stream(stream_id, resolution_combo, bitrate_input))
+        stream_layout.addWidget(start_button)
+
+        # Exit button to stop the video stream
+        exit_button = QPushButton(f"Exit Stream {stream_id}", self)
+        exit_button.clicked.connect(lambda: self.exit_stream(stream_id))
+        stream_layout.addWidget(exit_button)
+
+        stream_widget.setLayout(stream_layout)
+
+        return stream_widget
+
+    def start_video_streams(self):
+        # Stream URLs (replace with actual stream URLs from Mars Rover)
+        stream_url_1 = "udp://192.168.18.5:20001"
+        stream_url_2 = "rtsp://mars_rover_ip/stream2"
+        stream_url_3 = "rtsp://mars_rover_ip/stream3"
+
+        # Start video streams using ffplay in separate threads and save the process references
+        self.stream_processes[1] = threading.Thread(target=self.run_stream, args=(stream_url_1, 1), daemon=True)
+        self.stream_processes[2] = threading.Thread(target=self.run_stream, args=(stream_url_2, 2), daemon=True)
+        self.stream_processes[3] = threading.Thread(target=self.run_stream, args=(stream_url_3, 3), daemon=True)
+
+        self.stream_processes[1].start()
+        self.stream_processes[2].start()
+        self.stream_processes[3].start()
+
+    def run_stream(self, stream_url, stream_id):
+        process = display_video(stream_url, stream_id)
+        self.current_processes[stream_id] = process
+
+    def start_stream(self, stream_id, resolution_combo, bitrate_input):
+        # Get the selected resolution and bitrate for the given stream
+        resolution = resolution_combo.currentText()
+        bitrate = bitrate_input.text()
+
+        # Validate the bitrate input
+        if not bitrate.isdigit() or int(bitrate) <= 0:
+            print("Invalid bitrate. Please enter a valid integer value.")
+            return
+
+        # First, stop the existing stream if running
+        self.exit_stream(stream_id)
+
+        # Update the video settings on the rover
+        update_video_settings(resolution, bitrate)
+
+        # Restart the stream with new settings
+        stream_url = self.get_stream_url(stream_id)  # Get the stream URL based on the stream_id
+        self.current_processes[stream_id] = threading.Thread(target=self.run_stream, args=(stream_url, stream_id), daemon=True)
+        self.current_processes[stream_id].start()
+
+    def get_stream_url(self, stream_id):
+        # Return the appropriate stream URL for each stream_id
+        if stream_id == 1:
+            return "udp://192.168.18.5:20001"
+        elif stream_id == 2:
+            return "udp://192.168.18.5:20002"
+        elif stream_id == 3:
+            return "udp://192.168.18.5:20003"
+
+    def exit_stream(self, stream_id):
+        # Stop the stream process for the given stream_id
+        process = self.current_processes.get(stream_id)
+        if process:
+            stop_video_stream(process)
+            print(f"Stream {stream_id} has been stopped.")
+        else:
+            print(f"No process found for Stream {stream_id}")
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = MarsRoverGUI()
+    window.show()
+    sys.exit(app.exec_())
+
