@@ -1,7 +1,7 @@
 import sys
 import subprocess
 import threading
-from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QPushButton, QComboBox, QLineEdit
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QComboBox, QLineEdit
 from PyQt5.QtGui import QIntValidator 
 import paramiko
 
@@ -21,9 +21,8 @@ def display_video(stream_url, stream_id):
     return process
 
 # Function to update video stream settings (e.g., resolution, bitrate)
-def update_video_settings(resolution, bitrate):
-    bash_command = f"bash set_video_settings.sh --resolution {resolution} --bitrate {bitrate}"
-
+def update_video_settings(resolution, bitrate,stream_id,stream_url):
+    bash_command = f"ffmpeg -f v4l2 -framerate 15 -video_size {resolution} -pixel_format mjpeg -i /dev/video{stream_id//2} -c:v libx264 -b:v {bitrate}k -preset ultrafast -tune zerolatency -f mpegts {stream_url}"
     # Send the bash command to the rover
     threading.Thread(target=send_bash_command_via_ssh, args=(bash_command,)).start()
 
@@ -42,8 +41,7 @@ class MarsRoverGUI(QWidget):
         self.setGeometry(100, 100, 1200, 600)
 
         # Main Layout (Vertical stack for the whole window)
-        self.main_layout = QVBoxLayout(self)
-
+        self.main_layout = QHBoxLayout(self)
         # Stream controls (Vertical stack)
         self.stream_controls = []
 
@@ -95,21 +93,6 @@ class MarsRoverGUI(QWidget):
 
         return stream_widget
 
-    def start_video_streams(self):
-        # Stream URLs (replace with actual stream URLs from Mars Rover)
-        stream_url_1 = "udp://192.168.18.5:20001"
-        stream_url_2 = "rtsp://mars_rover_ip/stream2"
-        stream_url_3 = "rtsp://mars_rover_ip/stream3"
-
-        # Start video streams using ffplay in separate threads and save the process references
-        self.stream_processes[1] = threading.Thread(target=self.run_stream, args=(stream_url_1, 1), daemon=True)
-        self.stream_processes[2] = threading.Thread(target=self.run_stream, args=(stream_url_2, 2), daemon=True)
-        self.stream_processes[3] = threading.Thread(target=self.run_stream, args=(stream_url_3, 3), daemon=True)
-
-        self.stream_processes[1].start()
-        self.stream_processes[2].start()
-        self.stream_processes[3].start()
-
     def run_stream(self, stream_url, stream_id):
         process = display_video(stream_url, stream_id)
         self.current_processes[stream_id] = process
@@ -118,6 +101,7 @@ class MarsRoverGUI(QWidget):
         # Get the selected resolution and bitrate for the given stream
         resolution = resolution_combo.currentText()
         bitrate = bitrate_input.text()
+        stream_url = self.get_stream_url(stream_id)
 
         # Validate the bitrate input
         if not bitrate.isdigit() or int(bitrate) <= 0:
@@ -128,10 +112,9 @@ class MarsRoverGUI(QWidget):
         self.exit_stream(stream_id)
 
         # Update the video settings on the rover
-        update_video_settings(resolution, bitrate)
+        update_video_settings(resolution, bitrate, stream_id, stream_url)
 
         # Restart the stream with new settings
-        stream_url = self.get_stream_url(stream_id)  # Get the stream URL based on the stream_id
         self.current_processes[stream_id] = threading.Thread(target=self.run_stream, args=(stream_url, stream_id), daemon=True)
         self.current_processes[stream_id].start()
 
@@ -158,4 +141,5 @@ if __name__ == "__main__":
     window = MarsRoverGUI()
     window.show()
     sys.exit(app.exec_())
+
 
