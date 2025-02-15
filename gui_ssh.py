@@ -28,12 +28,12 @@ def display_video(stream_url, stream_id, resolution):
     if stream_id == 1:
         position = '-left 0 -top 0'
     elif stream_id == 2:
-        position = '-left 733 -top 0' 
+        position = '-left 715 -top 0' 
     elif stream_id == 3:
         position = '-left 0 -top 550'
     else:
-        position = '-left 733 -top 550'
-    ffplay_command = f"ffplay -fflags nobuffer -flags low_delay -i {stream_url} -window_title 'Stream {stream_id}' {position} -x 733 -y 550"
+        position = '-left 715 -top 550'
+    ffplay_command = f"ffplay -fflags nobuffer -flags low_delay -i {stream_url} -window_title 'Stream {stream_id}' {position} -x 665 -y 500"
     process = subprocess.Popen(ffplay_command, shell=True)
     return process
 
