@@ -7,10 +7,13 @@ import paramiko
 
 # Function to send bash commands to the rover
 def send_bash_command_via_ssh(command):
+    rover_ip_addr = '192.168.1.16'
+    rover_username = 'orinnx'
+    rover_password = 'pw'
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-    ssh.connect('192.168.18.5', username='your_username', password='your_password')
-    stdin, stdout, stderr = ssh.exec_command(command)
+    ssh.connect(rover_ip_addr, username=rover_username, password=rover_password)
+    stdin, stdout, stderr = ssh.exec_command("df")
     print(stdout.read().decode())
     ssh.close()
 
@@ -42,6 +45,20 @@ class MarsRoverGUI(QWidget):
 
         # Main Layout (Vertical stack for the whole window)
         self.main_layout = QHBoxLayout(self)
+
+        # IP Address Input Field
+        self.ip_label = QLabel("Base Station IP Address:")
+        self.ip_input = QLineEdit(self)     
+        self.ip_input.setPlaceholderText("Enter IP Address")
+        self.ip_input.setText("192.168.18.5")  # Default IP
+
+        # Layout for IP Address
+        ip_layout = QHBoxLayout()
+        ip_layout.addWidget(self.ip_label)
+        ip_layout.addWidget(self.ip_input)
+
+        self.main_layout.addLayout(ip_layout)
+
         # Stream controls (Vertical stack)
         self.stream_controls = []
 
@@ -49,13 +66,13 @@ class MarsRoverGUI(QWidget):
         self.stream_processes = {}  # Store process for each stream
 
         for i in range(1, 4):
-            stream_widget = self.create_stream_widget(i)
+            stream_widget = self.create_stream_widget(i, self.ip_input)
             self.stream_controls.append(stream_widget)
             self.main_layout.addWidget(stream_widget)
 
         self.current_processes = {}  # To track running processes
 
-    def create_stream_widget(self, stream_id):
+    def create_stream_widget(self, stream_id, ip_input):
         # Stream control widget (Vertical stack for each stream)
         stream_widget = QWidget(self)
         stream_layout = QVBoxLayout()
@@ -81,7 +98,7 @@ class MarsRoverGUI(QWidget):
 
         # Start button to start the stream
         start_button = QPushButton(f"Start Stream {stream_id}", self)
-        start_button.clicked.connect(lambda: self.start_stream(stream_id, resolution_combo, bitrate_input))
+        start_button.clicked.connect(lambda: self.start_stream(stream_id, resolution_combo, bitrate_input, ip_input))
         stream_layout.addWidget(start_button)
 
         # Exit button to stop the video stream
@@ -97,11 +114,12 @@ class MarsRoverGUI(QWidget):
         process = display_video(stream_url, stream_id)
         self.current_processes[stream_id] = process
 
-    def start_stream(self, stream_id, resolution_combo, bitrate_input):
+    def start_stream(self, stream_id, resolution_combo, bitrate_input, ip_input):
         # Get the selected resolution and bitrate for the given stream
         resolution = resolution_combo.currentText()
         bitrate = bitrate_input.text()
-        stream_url = self.get_stream_url(stream_id)
+        ip_addr = ip_input.text()
+        stream_url = self.get_stream_url(stream_id, ip_addr)
 
         # Validate the bitrate input
         if not bitrate.isdigit() or int(bitrate) <= 0:
@@ -118,14 +136,14 @@ class MarsRoverGUI(QWidget):
         self.current_processes[stream_id] = threading.Thread(target=self.run_stream, args=(stream_url, stream_id), daemon=True)
         self.current_processes[stream_id].start()
 
-    def get_stream_url(self, stream_id):
+    def get_stream_url(self, stream_id, ip_addr):
         # Return the appropriate stream URL for each stream_id
         if stream_id == 1:
-            return "udp://192.168.18.5:20001"
+            return "udp://"+ip_addr+":20001"
         elif stream_id == 2:
-            return "udp://192.168.18.5:20002"
+            return "udp://"+ip_addr+":20002"
         elif stream_id == 3:
-            return "udp://192.168.18.5:20003"
+            return "udp://"+ip_addr+":20003"
 
     def exit_stream(self, stream_id):
         # Stop the stream process for the given stream_id
