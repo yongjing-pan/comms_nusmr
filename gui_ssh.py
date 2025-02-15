@@ -1,7 +1,7 @@
 import sys
 import subprocess
 import threading
-from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QComboBox, QLineEdit
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QComboBox, QLineEdit, QMessageBox
 from PyQt5.QtGui import QIntValidator 
 import paramiko
 
@@ -26,10 +26,14 @@ def send_bash_command_via_ssh(command, host):
 # Function to start and display video stream using ffplay
 def display_video(stream_url, stream_id, resolution):
     if stream_id == 1:
-        position = '-right 0 -top 0'
+        position = '-left 0 -top 0'
     elif stream_id == 2:
-        position = '-right 0 -top 0' 
-    ffplay_command = f"ffplay -fflags nobuffer -flags low_delay -i {stream_url} -window_title 'Stream {stream_id}' {position} -x 800 -y 600"
+        position = '-left 733 -top 0' 
+    elif stream_id == 3:
+        position = '-left 0 -top 550'
+    else:
+        position = '-left 733 -top 550'
+    ffplay_command = f"ffplay -fflags nobuffer -flags low_delay -i {stream_url} -window_title 'Stream {stream_id}' {position} -x 733 -y 550"
     process = subprocess.Popen(ffplay_command, shell=True)
     return process
 
@@ -38,7 +42,7 @@ def update_video_settings(resolution, bitrate,stream_id,stream_url):
     if stream_id == 1:
         video_num = 0
     elif stream_id == 2:
-        video_num = 3
+        video_num = 2
     elif stream_id == 3:
         video_num = 0
     else:
@@ -180,6 +184,40 @@ class MarsRoverGUI(QWidget):
             print(f"Stream {stream_id} has been stopped.")
         else:
             print(f"No process found for Stream {stream_id}")
+
+    def stop_ffmpeg_streams_via_ssh(self, host):
+        if host == 'orin':
+            rover_ip_addr = '192.168.1.16'
+            rover_username = 'orinnx'
+            rover_password = 'pw'
+        else:
+            rover_ip_addr = '192.168.1.17'
+            rover_username = 'orangepi'
+            rover_password = 'orangepi'
+        ssh = paramiko.SSHClient()
+        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        ssh.connect(rover_ip_addr, username=rover_username, password=rover_password)
+        
+        kill_cmd = "pkill -f ffmpeg"
+        stdin, stdout, stderr = ssh.exec_command(kill_cmd)
+        print(stdout.read().decode())
+        print(stderr.read().decode())
+        ssh.close()
+        
+    def closeEvent(self, event):
+        #Stop all streams when window is closed
+            reply = QMessageBox.question(
+                self, "Exit", "Are you sure you want to close the application?",
+                QMessageBox.Yes | QMessageBox.No, QMessageBox.No
+            )
+
+            if reply == QMessageBox.Yes:
+                print("Closing application. Stopping all streams...")
+                self.stop_ffmpeg_streams_via_ssh('orin')
+                self.stop_ffmpeg_streams_via_ssh('opi')
+                event.accept()
+            else:
+                event.ignore()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
