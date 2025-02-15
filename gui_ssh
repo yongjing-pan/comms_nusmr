@@ -6,15 +6,21 @@ from PyQt5.QtGui import QIntValidator
 import paramiko
 
 # Function to send bash commands to the rover
-def send_bash_command_via_ssh(command):
-    rover_ip_addr = '192.168.1.16'
-    rover_username = 'orinnx'
-    rover_password = 'pw'
+def send_bash_command_via_ssh(command, host):
+    if host == 'orin':
+        rover_ip_addr = '192.168.1.16'
+        rover_username = 'orinnx'
+        rover_password = 'pw'
+    else:
+        rover_ip_addr = '192.168.1.17'
+        rover_username = 'orangepi'
+        rover_password = 'orangepi'
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     ssh.connect(rover_ip_addr, username=rover_username, password=rover_password)
-    stdin, stdout, stderr = ssh.exec_command("df")
+    stdin, stdout, stderr = ssh.exec_command(command)
     print(stdout.read().decode())
+    print(stderr.read().decode())
     ssh.close()
 
 # Function to start and display video stream using ffplay
@@ -24,10 +30,23 @@ def display_video(stream_url, stream_id):
     return process
 
 # Function to update video stream settings (e.g., resolution, bitrate)
-def update_video_settings(resolution, bitrate,stream_id,stream_url):
-    bash_command = f"ffmpeg -f v4l2 -framerate 15 -video_size {resolution} -pixel_format mjpeg -i /dev/video{stream_id//2} -c:v libx264 -b:v {bitrate}k -preset ultrafast -tune zerolatency -f mpegts {stream_url}"
+def update_video_settings(resolution, bitrate,stream_id,stream_url): 
+    if stream_id == 1:
+        video_num = 0
+    elif stream_id == 2:
+        video_num = 3
+    elif stream_id == 3:
+        video_num = 0
+    else:
+        video_num = 2
+    bash_command = f"ffmpeg -f v4l2 -framerate 15 -video_size {resolution} -pixel_format mjpeg -i /dev/video{video_num} -c:v libx264 -b:v {bitrate}k -preset ultrafast -tune zerolatency -f mpegts {stream_url}"
     # Send the bash command to the rover
-    threading.Thread(target=send_bash_command_via_ssh, args=(bash_command,)).start()
+    if stream_id <= 2:
+        host = 'orin'
+        threading.Thread(target=send_bash_command_via_ssh, args=(bash_command,host)).start()
+    else:
+        host = 'opi'
+        threading.Thread(target=send_bash_command_via_ssh, args=(bash_command,host)).start()
 
 # Function to stop the video stream using the process ID
 def stop_video_stream(process):
@@ -50,7 +69,7 @@ class MarsRoverGUI(QWidget):
         self.ip_label = QLabel("Base Station IP Address:")
         self.ip_input = QLineEdit(self)     
         self.ip_input.setPlaceholderText("Enter IP Address")
-        self.ip_input.setText("192.168.18.5")  # Default IP
+        self.ip_input.setText("192.168.1.18")  # Default IP
 
         # Layout for IP Address
         ip_layout = QHBoxLayout()
@@ -65,7 +84,7 @@ class MarsRoverGUI(QWidget):
         # Create labels and settings for each stream
         self.stream_processes = {}  # Store process for each stream
 
-        for i in range(1, 4):
+        for i in range(1, 5):
             stream_widget = self.create_stream_widget(i, self.ip_input)
             self.stream_controls.append(stream_widget)
             self.main_layout.addWidget(stream_widget)
@@ -93,6 +112,8 @@ class MarsRoverGUI(QWidget):
         bitrate_input = QLineEdit(self)
         bitrate_input.setValidator(QIntValidator(1, 10000))  # Allow integer values between 1 and 10000 kbps
         bitrate_input.setPlaceholderText("Enter bitrate in kbps")
+        bitrate_input.setText("1300")  #Default bitrate
+
         stream_layout.addWidget(bitrate_label)
         stream_layout.addWidget(bitrate_input)
 
@@ -129,7 +150,7 @@ class MarsRoverGUI(QWidget):
         # First, stop the existing stream if running
         self.exit_stream(stream_id)
 
-        # Update the video settings on the rover
+        # Update the video settings on the rover 
         update_video_settings(resolution, bitrate, stream_id, stream_url)
 
         # Restart the stream with new settings
@@ -144,6 +165,8 @@ class MarsRoverGUI(QWidget):
             return "udp://"+ip_addr+":20002"
         elif stream_id == 3:
             return "udp://"+ip_addr+":20003"
+        else:
+            return "udp://"+ip_addr+":20004"
 
     def exit_stream(self, stream_id):
         # Stop the stream process for the given stream_id
