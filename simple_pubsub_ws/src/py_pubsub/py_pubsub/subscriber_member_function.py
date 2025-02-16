@@ -1,3 +1,17 @@
+# Copyright 2016 Open Source Robotics Foundation, Inc.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 import sys
 import subprocess
 import threading
@@ -72,11 +86,10 @@ class MarsRoverGUI(QWidget):
 
         # Set up the window
         self.setWindowTitle("Mars Rover Video Stream Viewer")
-        self.setGeometry(1200, 0, 300, 1200)
-        self.move(1200,0)
+        self.setGeometry(100, 100, 1200, 600)
 
         # Main Layout (Vertical stack for the whole window)
-        self.main_layout = QVBoxLayout(self)
+        self.main_layout = QHBoxLayout(self)
 
         # IP Address Input Field
         self.ip_label = QLabel("Base Station IP Address:")
@@ -90,15 +103,6 @@ class MarsRoverGUI(QWidget):
         ip_layout.addWidget(self.ip_input)
 
         self.main_layout.addLayout(ip_layout)
-
-        # GPS Data Display
-        self.gps_label = QLabel("GPS Data") 
-
-        # Layout for IP Address
-        gps_layout = QHBoxLayout()
-        gps_layout.addWidget(self.gps_label) 
-
-        self.main_layout.addLayout(gps_layout)
 
         # Stream controls (Vertical stack)
         self.stream_controls = []
@@ -234,7 +238,7 @@ class MarsRoverGUI(QWidget):
                 event.ignore()
 
     def update_gps_data(self, lat, long, alt, accu):
-        self.gps_label.setText(f"GPS Data:\nLatitude: {lat}\nLongitude: {long}\nAltitude: {alt}\nAccuracy: {accu}")
+        print(f"lat: {lat}")
 
 class GPSSubscriber(Node):
     def __init__(self, gui_callback):
@@ -277,3 +281,55 @@ if __name__ == '__main__':
     main()
 
 
+
+
+
+'''
+import rclpy
+from rclpy.node import Node
+
+from std_msgs.msg import String
+from sensor_msgs.msg import NavSatFix
+
+import time
+
+
+class MinimalSubscriber(Node):
+
+    def __init__(self):
+        super().__init__('minimal_subscriber')
+        self.subscription = self.create_subscription(
+            NavSatFix,
+            '/gps/fix',
+            self.listener_callback,
+            10)
+        self.subscription  # prevent unused variable warning
+        self.latitude = 0
+
+    def listener_callback(self, msg):
+        self.get_logger().info('Latitude: "%s"' % msg.latitude)
+        self.latitude = msg.latitude
+
+
+def main(args=None):
+    rclpy.init(args=args)
+
+    minimal_subscriber = MinimalSubscriber()
+
+    rclpy.spin(minimal_subscriber)
+    
+    while True:
+    	time.sleep(1)
+    	print("In main, I get latitude = {minimal_subscriber.latitude}")
+
+    # Destroy the node explicitly
+    # (optional - otherwise it will be done automatically
+    # when the garbage collector destroys the node object)
+    minimal_subscriber.destroy_node()
+    rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
+
+    '''
