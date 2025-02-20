@@ -1,0 +1,25 @@
+[0.010s] Invoking command in '/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_msgs': CMAKE_PREFIX_PATH=/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox_serialization:/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox:/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox_gps:/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/fix2nmea:/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox_msgs:/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs:/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ntrip_client:/opt/ros/humble /usr/bin/cmake --build /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_msgs -- -j20 -l20
+[0.157s] [  0%] Built target ublox_msgs__cpp
+[0.183s] [ 12%] Built target ublox_msgs__rosidl_generator_c
+[0.225s] [ 12%] Built target ament_cmake_python_copy_ublox_msgs
+[0.230s] [ 24%] Built target ublox_msgs__rosidl_typesupport_cpp
+[0.241s] [ 37%] Built target ublox_msgs__rosidl_typesupport_c
+[0.244s] [ 49%] Built target ublox_msgs__rosidl_typesupport_fastrtps_cpp
+[0.247s] [ 62%] Built target ublox_msgs__rosidl_typesupport_introspection_c
+[0.252s] [ 74%] Built target ublox_msgs__rosidl_typesupport_introspection_cpp
+[0.263s] [ 75%] Built target ublox_msgs_lib
+[0.271s] [ 88%] Built target ublox_msgs__rosidl_typesupport_fastrtps_c
+[0.299s] [ 88%] Built target ublox_msgs
+[0.329s] [ 88%] Built target ublox_msgs__py
+[0.386s] [100%] Built target ublox_msgs__rosidl_generator_py
+[0.420s] [100%] Built target ublox_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.422s] [100%] Built target ublox_msgs__rosidl_typesupport_c__pyext
+[0.423s] [100%] Built target ublox_msgs__rosidl_typesupport_introspection_c__pyext
+[0.498s] running egg_info
+[0.498s] writing ublox_msgs.egg-info/PKG-INFO
+[0.498s] writing dependency_links to ublox_msgs.egg-info/dependency_links.txt
+[0.499s] writing top-level names to ublox_msgs.egg-info/top_level.txt
+[0.501s] reading manifest file 'ublox_msgs.egg-info/SOURCES.txt'
+[0.503s] writing manifest file 'ublox_msgs.egg-info/SOURCES.txt'
+[0.525s] [100%] Built target ament_cmake_python_build_ublox_msgs_egg
+[0.537s] Invoked command in '/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_msgs' returned '0': CMAKE_PREFIX_PATH=/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox_serialization:/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox:/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox_gps:/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/fix2nmea:/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox_msgs:/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs:/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ntrip_client:/opt/ros/humble /usr/bin/cmake --build /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_msgs -- -j20 -l20

@@ -1,0 +1,1 @@
+Invoking command in '/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/rtcm_msgs -DCMAKE_INSTALL_PREFIX=/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs

@@ -1,0 +1,10 @@
+/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/fix2nmea/CMakeFiles/uninstall.dir
+/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/fix2nmea/CMakeFiles/fix2nmea_uninstall.dir
+/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/fix2nmea/CMakeFiles/fix2nmea.dir
+/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/fix2nmea/CMakeFiles/test.dir
+/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/fix2nmea/CMakeFiles/edit_cache.dir
+/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/fix2nmea/CMakeFiles/rebuild_cache.dir
+/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/fix2nmea/CMakeFiles/list_install_components.dir
+/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/fix2nmea/CMakeFiles/install.dir
+/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/fix2nmea/CMakeFiles/install/local.dir
+/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/fix2nmea/CMakeFiles/install/strip.dir

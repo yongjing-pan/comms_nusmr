@@ -1,0 +1,189 @@
+[0.010s] Invoking command in '/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs -- -j20 -l20
+[0.033s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.041s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.047s] [  6%] Built target ament_cmake_python_copy_rtcm_msgs
+[0.188s] [  6%] Built target rtcm_msgs__cpp
+[0.197s] [  9%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[0.197s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[0.197s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[0.197s] [ 19%] [32mBuilding C object CMakeFiles/rtcm_msgs__rosidl_generator_c.dir/rosidl_generator_c/rtcm_msgs/msg/detail/message__functions.c.o[0m
+[0.208s] running egg_info
+[0.208s] creating rtcm_msgs.egg-info
+[0.209s] writing rtcm_msgs.egg-info/PKG-INFO
+[0.209s] writing dependency_links to rtcm_msgs.egg-info/dependency_links.txt
+[0.209s] writing top-level names to rtcm_msgs.egg-info/top_level.txt
+[0.209s] writing manifest file 'rtcm_msgs.egg-info/SOURCES.txt'
+[0.210s] reading manifest file 'rtcm_msgs.egg-info/SOURCES.txt'
+[0.210s] writing manifest file 'rtcm_msgs.egg-info/SOURCES.txt'
+[0.229s] [ 19%] Built target ament_cmake_python_build_rtcm_msgs_egg
+[0.251s] [ 22%] [32m[1mLinking C shared library librtcm_msgs__rosidl_generator_c.so[0m
+[0.278s] [ 22%] Built target rtcm_msgs__rosidl_generator_c
+[0.286s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[0.286s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[0.286s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[0.331s] [ 35%] [32mBuilding CXX object CMakeFiles/rtcm_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rtcm_msgs/msg/message__type_support.cpp.o[0m
+[0.343s] [ 38%] [32mBuilding CXX object CMakeFiles/rtcm_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rtcm_msgs/msg/detail/message__type_support.cpp.o[0m
+[0.426s] [ 41%] [32mBuilding CXX object CMakeFiles/rtcm_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/rtcm_msgs/msg/message__type_support.cpp.o[0m
+[0.427s] [ 45%] [32mBuilding CXX object CMakeFiles/rtcm_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rtcm_msgs/msg/detail/dds_fastrtps/message__type_support.cpp.o[0m
+[0.443s] [ 48%] [32m[1mLinking CXX shared library librtcm_msgs__rosidl_typesupport_c.so[0m
+[0.444s] [ 51%] [32mBuilding CXX object CMakeFiles/rtcm_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rtcm_msgs/msg/detail/message__type_support_c.cpp.o[0m
+[0.455s] [ 54%] [32mBuilding C object CMakeFiles/rtcm_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rtcm_msgs/msg/detail/message__type_support.c.o[0m
+[0.472s] [ 54%] Built target rtcm_msgs__rosidl_typesupport_c
+[0.481s] [ 58%] [32m[1mLinking C shared library librtcm_msgs__rosidl_typesupport_introspection_c.so[0m
+[0.502s] [ 58%] Built target rtcm_msgs__rosidl_typesupport_introspection_c
+[0.506s] [ 61%] [32m[1mLinking CXX shared library librtcm_msgs__rosidl_typesupport_cpp.so[0m
+[0.535s] [ 61%] Built target rtcm_msgs__rosidl_typesupport_cpp
+[0.595s] [ 64%] [32m[1mLinking CXX shared library librtcm_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[0.647s] [ 64%] Built target rtcm_msgs__rosidl_typesupport_introspection_cpp
+[0.662s] [ 67%] [32m[1mLinking CXX shared library librtcm_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[0.712s] [ 70%] [32m[1mLinking CXX shared library librtcm_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[0.713s] [ 70%] Built target rtcm_msgs__rosidl_typesupport_fastrtps_c
+[0.760s] [ 70%] Built target rtcm_msgs__rosidl_typesupport_fastrtps_cpp
+[0.775s] [ 70%] Built target rtcm_msgs
+[0.789s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[0.970s] [ 74%] Built target rtcm_msgs__py
+[0.984s] [ 77%] [32mBuilding C object CMakeFiles/rtcm_msgs__rosidl_generator_py.dir/rosidl_generator_py/rtcm_msgs/msg/_message_s.c.o[0m
+[1.062s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/rtcm_msgs/librtcm_msgs__rosidl_generator_py.so[0m
+[1.093s] [ 80%] Built target rtcm_msgs__rosidl_generator_py
+[1.106s] [ 83%] [32mBuilding C object CMakeFiles/rtcm_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/rtcm_msgs/_rtcm_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[1.108s] [ 87%] [32mBuilding C object CMakeFiles/rtcm_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/rtcm_msgs/_rtcm_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[1.108s] [ 90%] [32mBuilding C object CMakeFiles/rtcm_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/rtcm_msgs/_rtcm_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[1.167s] [100%] [32m[1mLinking C shared library rosidl_generator_py/rtcm_msgs/rtcm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.167s] [100%] [32m[1mLinking C shared library rosidl_generator_py/rtcm_msgs/rtcm_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.167s] [100%] [32m[1mLinking C shared library rosidl_generator_py/rtcm_msgs/rtcm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.193s] [100%] Built target rtcm_msgs__rosidl_typesupport_c__pyext
+[1.193s] [100%] Built target rtcm_msgs__rosidl_typesupport_introspection_c__pyext
+[1.194s] [100%] Built target rtcm_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.202s] Invoked command in '/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs -- -j20 -l20
+[1.244s] Invoking command in '/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs
+[1.249s] -- Install configuration: ""
+[1.249s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/ament_index/resource_index/rosidl_interfaces/rtcm_msgs
+[1.249s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs
+[1.249s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg
+[1.249s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/message.h
+[1.249s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/rosidl_generator_c__visibility_control.h
+[1.249s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/detail
+[1.249s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/detail/message__functions.h
+[1.249s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/detail/message__struct.h
+[1.249s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/detail/message__type_support.h
+[1.249s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/detail/message__functions.c
+[1.249s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/environment/library_path.sh
+[1.249s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/environment/library_path.dsv
+[1.250s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_generator_c.so
+[1.250s] -- Set runtime path of "/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_generator_c.so" to ""
+[1.250s] -- Up-to-date: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs
+[1.250s] -- Up-to-date: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg
+[1.250s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.250s] -- Up-to-date: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/detail
+[1.250s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/detail/message__rosidl_typesupport_fastrtps_c.h
+[1.250s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_fastrtps_c.so
+[1.250s] -- Set runtime path of "/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[1.250s] -- Up-to-date: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs
+[1.250s] -- Up-to-date: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg
+[1.250s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/message.hpp
+[1.250s] -- Up-to-date: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/detail
+[1.250s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/detail/message__traits.hpp
+[1.250s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/detail/message__struct.hpp
+[1.251s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/detail/message__builder.hpp
+[1.251s] -- Up-to-date: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs
+[1.251s] -- Up-to-date: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg
+[1.251s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.251s] -- Up-to-date: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/detail
+[1.251s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/detail/message__rosidl_typesupport_fastrtps_cpp.hpp
+[1.251s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/detail/dds_fastrtps
+[1.251s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.251s] -- Set runtime path of "/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[1.251s] -- Up-to-date: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs
+[1.251s] -- Up-to-date: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg
+[1.251s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.251s] -- Up-to-date: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/detail
+[1.251s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/detail/message__rosidl_typesupport_introspection_c.h
+[1.251s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/detail/message__type_support.c
+[1.251s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_introspection_c.so
+[1.251s] -- Set runtime path of "/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_introspection_c.so" to ""
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_c.so
+[1.252s] -- Set runtime path of "/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_c.so" to ""
+[1.252s] -- Up-to-date: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs
+[1.252s] -- Up-to-date: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg
+[1.252s] -- Up-to-date: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/detail
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/detail/message__type_support.cpp
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/include/rtcm_msgs/rtcm_msgs/msg/detail/message__rosidl_typesupport_introspection_cpp.hpp
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_introspection_cpp.so
+[1.252s] -- Set runtime path of "/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_cpp.so
+[1.252s] -- Set runtime path of "/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_cpp.so" to ""
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/environment/pythonpath.sh
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/environment/pythonpath.dsv
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs-1.1.6-py3.10.egg-info
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs-1.1.6-py3.10.egg-info/PKG-INFO
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs-1.1.6-py3.10.egg-info/dependency_links.txt
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs-1.1.6-py3.10.egg-info/top_level.txt
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs-1.1.6-py3.10.egg-info/SOURCES.txt
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/rtcm_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/rtcm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/msg
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/msg/_message.py
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/msg/__init__.py
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/msg/_message_s.c
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/_rtcm_msgs_s.ep.rosidl_typesupport_c.c
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/_rtcm_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/__init__.py
+[1.252s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/rtcm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.253s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/_rtcm_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.253s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/librtcm_msgs__rosidl_generator_py.so
+[1.274s] Listing '/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs'...
+[1.274s] Compiling '/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/__init__.py'...
+[1.274s] Listing '/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/msg'...
+[1.274s] Compiling '/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/msg/__init__.py'...
+[1.274s] Compiling '/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/msg/_message.py'...
+[1.277s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/rtcm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.277s] -- Set runtime path of "/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/rtcm_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.277s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/rtcm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.277s] -- Set runtime path of "/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/rtcm_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.277s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/rtcm_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.277s] -- Set runtime path of "/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/local/lib/python3.10/dist-packages/rtcm_msgs/rtcm_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.277s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_generator_py.so
+[1.277s] -- Set runtime path of "/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_generator_py.so" to ""
+[1.277s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/msg/Message.idl
+[1.277s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/msg/Message.msg
+[1.277s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/ament_index/resource_index/package_run_dependencies/rtcm_msgs
+[1.277s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/ament_index/resource_index/parent_prefix_path/rtcm_msgs
+[1.277s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/environment/ament_prefix_path.sh
+[1.277s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/environment/ament_prefix_path.dsv
+[1.277s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/environment/path.sh
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/environment/path.dsv
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/local_setup.bash
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/local_setup.sh
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/local_setup.zsh
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/local_setup.dsv
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/package.dsv
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/ament_index/resource_index/packages/rtcm_msgs
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/export_rtcm_msgs__rosidl_generator_cExport.cmake
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/export_rtcm_msgs__rosidl_generator_cExport-noconfig.cmake
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/export_rtcm_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/export_rtcm_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/export_rtcm_msgs__rosidl_generator_cppExport.cmake
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/export_rtcm_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/export_rtcm_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/rtcm_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/rtcm_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/rtcm_msgs__rosidl_typesupport_cExport.cmake
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/rtcm_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/rtcm_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/rtcm_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/rtcm_msgs__rosidl_typesupport_cppExport.cmake
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/rtcm_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/export_rtcm_msgs__rosidl_generator_pyExport.cmake
+[1.278s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/export_rtcm_msgs__rosidl_generator_pyExport-noconfig.cmake
+[1.279s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/rosidl_cmake-extras.cmake
+[1.279s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.279s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.279s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.279s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.279s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.279s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.279s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/rtcm_msgsConfig.cmake
+[1.279s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/cmake/rtcm_msgsConfig-version.cmake
+[1.279s] -- Installing: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/share/rtcm_msgs/package.xml
+[1.281s] Invoked command in '/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs
