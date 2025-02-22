@@ -1,6 +1,0 @@
-{
-  "package_name": "rtcm_msgs",
-  "non_idl_tuples": [
-    "/home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/rtcm_msgs:msg/Message.msg"
-  ]
-}
