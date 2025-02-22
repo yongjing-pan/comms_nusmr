@@ -1,0 +1,6 @@
+{
+  "package_name": "mapviz_interfaces",
+  "non_idl_tuples": [
+    "/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/mapviz_interfaces:srv/AddMapvizDisplay.srv"
+  ]
+}

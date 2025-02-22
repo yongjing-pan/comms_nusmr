@@ -1,0 +1,11 @@
+source;share/tile_map/hook/cmake_prefix_path.ps1
+source;share/tile_map/hook/cmake_prefix_path.dsv
+source;share/tile_map/hook/cmake_prefix_path.sh
+source;share/tile_map/hook/ld_library_path_lib.ps1
+source;share/tile_map/hook/ld_library_path_lib.dsv
+source;share/tile_map/hook/ld_library_path_lib.sh
+source;share/tile_map/local_setup.bash
+source;share/tile_map/local_setup.dsv
+source;share/tile_map/local_setup.ps1
+source;share/tile_map/local_setup.sh
+source;share/tile_map/local_setup.zsh

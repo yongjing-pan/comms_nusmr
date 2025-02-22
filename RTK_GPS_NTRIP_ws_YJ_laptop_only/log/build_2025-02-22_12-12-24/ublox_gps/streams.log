@@ -1,0 +1,138 @@
+[0.016s] Invoking command in '/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps': AMENT_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_serialization:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_serialization:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/gnss_path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/lib:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/local/lib/python3.10/dist-packages:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox_gps -DCMAKE_INSTALL_PREFIX=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps
+[0.077s] -- The C compiler identification is GNU 11.4.0
+[0.139s] -- The CXX compiler identification is GNU 11.4.0
+[0.148s] -- Detecting C compiler ABI info
+[0.225s] -- Detecting C compiler ABI info - done
+[0.230s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.231s] -- Detecting C compile features
+[0.231s] -- Detecting C compile features - done
+[0.234s] -- Detecting CXX compiler ABI info
+[0.321s] -- Detecting CXX compiler ABI info - done
+[0.327s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.327s] -- Detecting CXX compile features
+[0.328s] -- Detecting CXX compile features - done
+[0.331s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.504s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.595s] -- Found asio: /usr/include  
+[0.602s] -- Found diagnostic_msgs: 4.2.4 (/opt/ros/humble/share/diagnostic_msgs/cmake)
+[0.639s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.644s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.652s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.665s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.681s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.726s] -- Found diagnostic_updater: 4.0.0 (/opt/ros/humble/share/diagnostic_updater/cmake)
+[0.770s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.772s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.869s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.896s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.938s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.948s] -- Looking for pthread.h
+[1.029s] -- Looking for pthread.h - found
+[1.029s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.107s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.109s] -- Found Threads: TRUE  
+[1.153s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.168s] -- Found rclcpp_components: 16.0.11 (/opt/ros/humble/share/rclcpp_components/cmake)
+[1.193s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.210s] -- Found tf2: 0.25.9 (/opt/ros/humble/share/tf2/cmake)
+[1.212s] -- Found ublox_msgs: 2.3.0 (/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/share/ublox_msgs/cmake)
+[1.229s] -- Found rtcm_msgs: 1.1.6 (/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/share/rtcm_msgs/cmake)
+[1.309s] -- Configuring done
+[1.367s] -- Generating done
+[1.382s] -- Build files have been written to: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps
+[1.393s] Invoked command in '/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps' returned '0': AMENT_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_serialization:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_serialization:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/gnss_path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/lib:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/local/lib/python3.10/dist-packages:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox_gps -DCMAKE_INSTALL_PREFIX=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps
+[1.396s] Invoking command in '/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps': AMENT_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_serialization:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_serialization:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/gnss_path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/lib:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/local/lib/python3.10/dist-packages:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps -- -j20 -l20
+[1.470s] [  4%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/adr_udr_product.cpp.o[0m
+[1.471s] [  9%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/gnss.cpp.o[0m
+[1.471s] [ 13%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/hpg_ref_product.cpp.o[0m
+[1.471s] [ 18%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/hpg_rov_product.cpp.o[0m
+[1.471s] [ 22%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/gps.cpp.o[0m
+[1.471s] [ 27%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/raw_data_product.cpp.o[0m
+[1.471s] [ 31%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/hp_pos_rec_product.cpp.o[0m
+[1.473s] [ 36%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/raw_data_pa.cpp.o[0m
+[1.474s] [ 40%] [32mBuilding C object CMakeFiles/ublox_gps.dir/src/mkgmtime.c.o[0m
+[1.475s] [ 45%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/node.cpp.o[0m
+[1.476s] [ 50%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/ublox_firmware6.cpp.o[0m
+[1.476s] [ 54%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/ublox_firmware7.cpp.o[0m
+[1.477s] [ 59%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/ublox_firmware.cpp.o[0m
+[1.479s] [ 68%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/ublox_firmware9.cpp.o[0m
+[1.479s] [ 68%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/tim_product.cpp.o[0m
+[1.479s] [ 72%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/ublox_firmware8.cpp.o[0m
+[29.469s] [ 77%] [32m[1mLinking CXX shared library libublox_gps.so[0m
+[32.264s] [ 77%] Built target ublox_gps
+[32.291s] [ 81%] [32mBuilding CXX object CMakeFiles/ublox_gps_node.dir/src/node_main.cpp.o[0m
+[32.292s] [ 86%] [32mBuilding CXX object CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.o[0m
+[32.292s] [ 90%] [32mBuilding CXX object CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.o[0m
+[37.292s] [ 95%] [32m[1mLinking CXX executable ublox_gps_node[0m
+[38.262s] [ 95%] Built target ublox_gps_node
+[39.635s] [100%] [32m[1mLinking CXX executable ublox_logger[0m
+[40.068s] [100%] Built target ublox_logger
+[40.078s] Invoked command in '/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps' returned '0': AMENT_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_serialization:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_serialization:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/gnss_path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/lib:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/local/lib/python3.10/dist-packages:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps -- -j20 -l20
+[40.080s] Invoking command in '/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps': AMENT_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_serialization:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_serialization:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/gnss_path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/lib:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/local/lib/python3.10/dist-packages:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps
+[40.092s] -- Install configuration: ""
+[40.092s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/lib/libublox_gps.so
+[40.112s] -- Set runtime path of "/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/lib/libublox_gps.so" to ""
+[40.112s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/lib/ublox_gps/ublox_gps_node
+[40.113s] -- Set runtime path of "/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/lib/ublox_gps/ublox_gps_node" to ""
+[40.113s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/lib/ublox_gps/ublox_logger
+[40.114s] -- Set runtime path of "/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/lib/ublox_gps/ublox_logger" to ""
+[40.115s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps
+[40.115s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps
+[40.115s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/rtcm.hpp
+[40.115s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/mkgmtime.h
+[40.115s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_firmware6.hpp
+[40.115s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_firmware7.hpp
+[40.116s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/async_worker.hpp
+[40.116s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/node.hpp
+[40.116s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_firmware.hpp
+[40.116s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/fix_diagnostic.hpp
+[40.116s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/callback.hpp
+[40.117s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/fts_product.hpp
+[40.117s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/raw_data_product.hpp
+[40.117s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_firmware8.hpp
+[40.117s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/gnss.hpp
+[40.117s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/raw_data_pa.hpp
+[40.117s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_topic_diagnostic.hpp
+[40.117s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/hpg_rov_product.hpp
+[40.118s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/component_interface.hpp
+[40.118s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/worker.hpp
+[40.118s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/utils.hpp
+[40.118s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/adr_udr_product.hpp
+[40.118s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/hpg_ref_product.hpp
+[40.119s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_firmware7plus.hpp
+[40.119s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/hp_pos_rec_product.hpp
+[40.119s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_firmware9.hpp
+[40.119s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/tim_product.hpp
+[40.119s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/include/ublox_gps/ublox_gps/gps.hpp
+[40.119s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/launch
+[40.119s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/launch/ublox_gps_node-launch.py
+[40.119s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/launch/ublox_gps_node-composed-launch.py
+[40.119s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/config
+[40.120s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/config/c94_m8t_rover.yaml
+[40.120s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/config/zed_f9p.yaml
+[40.120s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/config/c94_m8p_base.yaml
+[40.120s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/config/neo_m8u_rover.yaml
+[40.120s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/config/c94_m8t_base.yaml
+[40.120s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/config/c94_m8p_rover.yaml
+[40.120s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/config/nmea.yaml
+[40.120s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ament_index/resource_index/package_run_dependencies/ublox_gps
+[40.120s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ament_index/resource_index/parent_prefix_path/ublox_gps
+[40.120s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/environment/ament_prefix_path.sh
+[40.121s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/environment/ament_prefix_path.dsv
+[40.121s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/environment/path.sh
+[40.121s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/environment/path.dsv
+[40.121s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/local_setup.bash
+[40.121s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/local_setup.sh
+[40.121s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/local_setup.zsh
+[40.121s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/local_setup.dsv
+[40.121s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/package.dsv
+[40.122s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ament_index/resource_index/packages/ublox_gps
+[40.122s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ament_index/resource_index/rclcpp_components/ublox_gps
+[40.122s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/cmake/export_ublox_gpsExport.cmake
+[40.122s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/cmake/export_ublox_gpsExport-noconfig.cmake
+[40.122s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/cmake/ament_cmake_export_include_directories-extras.cmake
+[40.122s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/cmake/ament_cmake_export_targets-extras.cmake
+[40.122s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/cmake/ublox_gpsConfig.cmake
+[40.122s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/cmake/ublox_gpsConfig-version.cmake
+[40.122s] -- Installing: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_gps/share/ublox_gps/package.xml
+[40.124s] Invoked command in '/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps' returned '0': AMENT_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_serialization:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_serialization:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/gnss_path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/lib:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/local/lib/python3.10/dist-packages:/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps

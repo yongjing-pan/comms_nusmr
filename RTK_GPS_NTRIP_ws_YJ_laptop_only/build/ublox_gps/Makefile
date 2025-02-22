@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox_gps
+CMAKE_SOURCE_DIR = /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox_gps
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_gps
+CMAKE_BINARY_DIR = /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_gps/CMakeFiles /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_gps//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps/CMakeFiles /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_gps/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/fix2nmea/src/fix2nmea.cpp" "CMakeFiles/fix2nmea.dir/src/fix2nmea.cpp.o" "gcc" "CMakeFiles/fix2nmea.dir/src/fix2nmea.cpp.o.d"
+  "/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/fix2nmea/src/fix2nmea.cpp" "CMakeFiles/fix2nmea.dir/src/fix2nmea.cpp.o" "gcc" "CMakeFiles/fix2nmea.dir/src/fix2nmea.cpp.o.d"
   )
 
 # Targets to which this target links.

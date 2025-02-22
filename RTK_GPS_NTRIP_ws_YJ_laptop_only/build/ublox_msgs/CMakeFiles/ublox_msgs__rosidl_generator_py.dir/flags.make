@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"ublox_msgs\" -Dublox_msgs__rosidl_generator_py_EXPORTS
 
-C_INCLUDES = -I/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_msgs/rosidl_generator_c -I/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_msgs/rosidl_generator_py -I/usr/include/python3.10 -isystem /opt/ros/humble/include/sensor_msgs -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/std_msgs
+C_INCLUDES = -I/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_msgs/rosidl_generator_c -I/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_msgs/rosidl_generator_py -I/usr/include/python3.10 -isystem /opt/ros/humble/include/sensor_msgs -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/std_msgs
 
 C_FLAGS = -fPIC -Wall -Wextra
 

@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-df1955f0f2481c1b7b21.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "tile_map",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "tile_map::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tile_map-13382a8e7352d58d7eed.json",
+					"name" : "tile_map",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tile_map_plugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tile_map_plugin-f44238f83c4deac026af.json",
+					"name" : "tile_map_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tile_map_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tile_map_uninstall-7ad61090554fa686981c.json",
+					"name" : "tile_map_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-4158beb001b3da2e94e8.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map",
+		"source" : "/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/tile_map"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

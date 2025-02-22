@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox_msgs
+CMAKE_SOURCE_DIR = /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_msgs
+CMAKE_BINARY_DIR = /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_msgs
 
 # Utility rule file for ublox_msgs__cpp.
 
@@ -635,8 +635,8 @@ rosidl_generator_cpp/ublox_msgs/msg/ack.hpp: /opt/ros/humble/share/std_msgs/msg/
 rosidl_generator_cpp/ublox_msgs/msg/ack.hpp: /opt/ros/humble/share/std_msgs/msg/UInt64MultiArray.idl
 rosidl_generator_cpp/ublox_msgs/msg/ack.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8.idl
 rosidl_generator_cpp/ublox_msgs/msg/ack.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_msgs/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_msgs/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/ublox_msgs/msg/detail/ack__builder.hpp: rosidl_generator_cpp/ublox_msgs/msg/ack.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/ublox_msgs/msg/detail/ack__builder.hpp
@@ -2188,6 +2188,6 @@ CMakeFiles/ublox_msgs__cpp.dir/clean:
 .PHONY : CMakeFiles/ublox_msgs__cpp.dir/clean
 
 CMakeFiles/ublox_msgs__cpp.dir/depend:
-	cd /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox_msgs /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox_msgs /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_msgs /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_msgs /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_msgs/CMakeFiles/ublox_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox_msgs /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox_msgs /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_msgs /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_msgs /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_msgs/CMakeFiles/ublox_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ublox_msgs__cpp.dir/depend
 

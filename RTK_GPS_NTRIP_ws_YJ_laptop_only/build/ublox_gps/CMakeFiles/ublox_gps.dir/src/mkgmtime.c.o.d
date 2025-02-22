@@ -1,7 +1,7 @@
 CMakeFiles/ublox_gps.dir/src/mkgmtime.c.o: \
- /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox_gps/src/mkgmtime.c \
+ /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox_gps/src/mkgmtime.c \
  /usr/include/stdc-predef.h \
- /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox_gps/include/ublox_gps/mkgmtime.h \
+ /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox_gps/include/ublox_gps/mkgmtime.h \
  /usr/include/time.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

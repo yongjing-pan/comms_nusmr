@@ -1,0 +1,7 @@
+-I/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/mapviz
+-I/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz
+-DWFlags=WindowFlags
+-DQT_NO_KEYWORDS
+-o
+/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz/include/mapviz/moc_map_canvas.cpp
+/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/mapviz/include/mapviz/map_canvas.h

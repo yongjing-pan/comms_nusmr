@@ -1,0 +1,10 @@
+/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_plugins/CMakeFiles/uninstall.dir
+/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_plugins/CMakeFiles/mapviz_plugins_uninstall.dir
+/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_plugins/CMakeFiles/mapviz_plugins.dir
+/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_plugins/CMakeFiles/test.dir
+/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_plugins/CMakeFiles/edit_cache.dir
+/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_plugins/CMakeFiles/rebuild_cache.dir
+/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_plugins/CMakeFiles/list_install_components.dir
+/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_plugins/CMakeFiles/install.dir
+/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_plugins/CMakeFiles/install/local.dir
+/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_plugins/CMakeFiles/install/strip.dir

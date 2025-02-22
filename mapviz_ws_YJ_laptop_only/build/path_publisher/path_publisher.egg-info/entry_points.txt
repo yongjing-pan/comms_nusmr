@@ -1,0 +1,3 @@
+[console_scripts]
+my_node = path_publisher.my_node:main
+

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/rtcm_msgs
+CMAKE_SOURCE_DIR = /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/rtcm_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs
+CMAKE_BINARY_DIR = /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs
 
 # Utility rule file for rtcm_msgs__py.
 
@@ -119,8 +119,8 @@ rosidl_generator_py/rtcm_msgs/_rtcm_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /
 rosidl_generator_py/rtcm_msgs/_rtcm_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/UInt64MultiArray.idl
 rosidl_generator_py/rtcm_msgs/_rtcm_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/UInt8.idl
 rosidl_generator_py/rtcm_msgs/_rtcm_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs/rtcm_msgs__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs/rtcm_msgs__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/rtcm_msgs/_rtcm_msgs_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/rtcm_msgs/_rtcm_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rtcm_msgs/_rtcm_msgs_s.ep.rosidl_typesupport_introspection_c.c
@@ -152,10 +152,10 @@ rtcm_msgs__py/CMakeFiles/rtcm_msgs__py.dir/build: rtcm_msgs__py
 .PHONY : rtcm_msgs__py/CMakeFiles/rtcm_msgs__py.dir/build
 
 rtcm_msgs__py/CMakeFiles/rtcm_msgs__py.dir/clean:
-	cd /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs/rtcm_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/rtcm_msgs__py.dir/cmake_clean.cmake
+	cd /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs/rtcm_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/rtcm_msgs__py.dir/cmake_clean.cmake
 .PHONY : rtcm_msgs__py/CMakeFiles/rtcm_msgs__py.dir/clean
 
 rtcm_msgs__py/CMakeFiles/rtcm_msgs__py.dir/depend:
-	cd /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/rtcm_msgs /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs/rtcm_msgs__py /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs/rtcm_msgs__py /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs/rtcm_msgs__py/CMakeFiles/rtcm_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/rtcm_msgs /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs/rtcm_msgs__py /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs/rtcm_msgs__py /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs/rtcm_msgs__py/CMakeFiles/rtcm_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rtcm_msgs__py/CMakeFiles/rtcm_msgs__py.dir/depend
 

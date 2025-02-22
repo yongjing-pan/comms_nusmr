@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/rtcm_msgs
+CMAKE_SOURCE_DIR = /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/rtcm_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs
+CMAKE_BINARY_DIR = /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs
 
 # Utility rule file for rtcm_msgs_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/rtcm_msgs_uninstall.dir/compiler_depend.make
 include CMakeFiles/rtcm_msgs_uninstall.dir/progress.make
 
 CMakeFiles/rtcm_msgs_uninstall:
-	/usr/bin/cmake -P /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 rtcm_msgs_uninstall: CMakeFiles/rtcm_msgs_uninstall
 rtcm_msgs_uninstall: CMakeFiles/rtcm_msgs_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/rtcm_msgs_uninstall.dir/clean:
 .PHONY : CMakeFiles/rtcm_msgs_uninstall.dir/clean
 
 CMakeFiles/rtcm_msgs_uninstall.dir/depend:
-	cd /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/rtcm_msgs /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/rtcm_msgs /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs/CMakeFiles/rtcm_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/rtcm_msgs /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/rtcm_msgs /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs/CMakeFiles/rtcm_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rtcm_msgs_uninstall.dir/depend
 

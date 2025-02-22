@@ -1,0 +1,218 @@
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found ament_index_cpp: 1.4.0 (/opt/ros/humble/share/ament_index_cpp/cmake)
+-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found gps_msgs: 2.0.4 (/opt/ros/humble/share/gps_msgs/cmake)
+-- Found image_transport: 3.1.10 (/opt/ros/humble/share/image_transport/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found map_msgs: 2.1.0 (/opt/ros/humble/share/map_msgs/cmake)
+-- Found mapviz: 2.4.5 (/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/cmake)
+-- Found marti_common_msgs: 1.6.1 (/opt/ros/humble/share/marti_common_msgs/cmake)
+-- Found marti_nav_msgs: 1.6.1 (/opt/ros/humble/share/marti_nav_msgs/cmake)
+-- Found marti_sensor_msgs: 1.6.1 (/opt/ros/humble/share/marti_sensor_msgs/cmake)
+-- Found marti_visualization_msgs: 1.6.1 (/opt/ros/humble/share/marti_visualization_msgs/cmake)
+-- Found stereo_msgs: 4.2.4 (/opt/ros/humble/share/stereo_msgs/cmake)
+-- Found swri_image_util: 3.7.3 (/opt/ros/humble/share/swri_image_util/cmake)
+-- Found swri_math_util: 3.7.3 (/opt/ros/humble/share/swri_math_util/cmake)
+-- Found swri_route_util: 3.7.3 (/opt/ros/humble/share/swri_route_util/cmake)
+-- Found swri_transform_util: 3.7.3 (/opt/ros/humble/share/swri_transform_util/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+-- Found OpenCV: /usr (found version "4.5.4") found components: core imgproc 
+-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+-- Checking for module 'glut'
+--   No package 'glut' found
+-- Found GLUT: /usr/lib/x86_64-linux-gnu/libglut.so  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_plugins
+[  1%] [34m[1mGenerating ui_topicselect.h[0m
+[  2%] [34m[1mGenerating include/mapviz_plugins/moc_attitude_indicator_plugin.cpp[0m
+[  3%] [34m[1mGenerating include/mapviz_plugins/moc_draw_polygon_plugin.cpp[0m
+[  4%] [34m[1mGenerating include/mapviz_plugins/moc_coordinate_picker_plugin.cpp[0m
+[  5%] [34m[1mGenerating include/mapviz_plugins/moc_canvas_click_filter.cpp[0m
+[  2%] [34m[1mGenerating include/mapviz_plugins/moc_disparity_plugin.cpp[0m
+[  6%] [34m[1mGenerating include/mapviz_plugins/moc_grid_plugin.cpp[0m
+[  9%] [34m[1mGenerating include/mapviz_plugins/moc_laserscan_plugin.cpp[0m
+[  9%] [34m[1mGenerating include/mapviz_plugins/moc_image_plugin.cpp[0m
+[ 10%] [34m[1mGenerating include/mapviz_plugins/moc_gps_plugin.cpp[0m
+[ 10%] [34m[1mGenerating include/mapviz_plugins/moc_float_plugin.cpp[0m
+[ 11%] [34m[1mGenerating include/mapviz_plugins/moc_marker_plugin.cpp[0m
+[ 11%] [34m[1mGenerating include/mapviz_plugins/moc_measuring_plugin.cpp[0m
+[ 12%] [34m[1mGenerating include/mapviz_plugins/moc_navsat_plugin.cpp[0m
+[ 13%] [34m[1mGenerating include/mapviz_plugins/moc_occupancy_grid_plugin.cpp[0m
+[ 14%] [34m[1mGenerating include/mapviz_plugins/moc_path_plugin.cpp[0m
+[ 15%] [34m[1mGenerating include/mapviz_plugins/moc_plan_route_plugin.cpp[0m
+[ 16%] [34m[1mGenerating include/mapviz_plugins/moc_point_click_publisher_plugin.cpp[0m
+[ 17%] [34m[1mGenerating include/mapviz_plugins/moc_placeable_window_proxy.cpp[0m
+[ 18%] [34m[1mGenerating include/mapviz_plugins/moc_odometry_plugin.cpp[0m
+[ 19%] [34m[1mGenerating include/mapviz_plugins/moc_pointcloud2_plugin.cpp[0m
+[ 20%] [34m[1mGenerating include/mapviz_plugins/moc_point_drawing_plugin.cpp[0m
+[ 19%] [34m[1mGenerating include/mapviz_plugins/moc_robot_image_plugin.cpp[0m
+[ 22%] [34m[1mGenerating include/mapviz_plugins/moc_pose_plugin.cpp[0m
+[ 22%] [34m[1mGenerating include/mapviz_plugins/moc_route_plugin.cpp[0m
+[ 23%] [34m[1mGenerating include/mapviz_plugins/moc_topic_select.cpp[0m
+[ 26%] [34m[1mGenerating include/mapviz_plugins/moc_textured_marker_plugin.cpp[0m
+[ 26%] [34m[1mGenerating include/mapviz_plugins/moc_string_plugin.cpp[0m
+[ 26%] [34m[1mGenerating include/mapviz_plugins/moc_tf_frame_plugin.cpp[0m
+[ 27%] [34m[1mGenerating ui_coordinate_picker_config.h[0m
+[ 28%] [34m[1mGenerating ui_attitude_indicator_config.h[0m
+[ 29%] [34m[1mGenerating ui_disparity_config.h[0m
+[ 30%] [34m[1mGenerating ui_float_config.h[0m
+[ 30%] [34m[1mGenerating ui_gps_config.h[0m
+[ 31%] [34m[1mGenerating ui_grid_config.h[0m
+[ 32%] [34m[1mGenerating ui_laserscan_config.h[0m
+[ 33%] [34m[1mGenerating ui_marker_config.h[0m
+[ 34%] [34m[1mGenerating ui_image_config.h[0m
+[ 35%] [34m[1mGenerating ui_draw_polygon_config.h[0m
+[ 36%] [34m[1mGenerating ui_measuring_config.h[0m
+[ 37%] [34m[1mGenerating ui_occupancy_grid_config.h[0m
+[ 38%] [34m[1mGenerating ui_path_config.h[0m
+[ 39%] [34m[1mGenerating ui_pointcloud2_config.h[0m
+[ 41%] [34m[1mGenerating ui_odometry_config.h[0m
+[ 41%] [34m[1mGenerating ui_navsat_config.h[0m
+[ 41%] [34m[1mGenerating ui_point_click_publisher_config.h[0m
+[ 42%] [34m[1mGenerating ui_pose_config.h[0m
+[ 43%] [34m[1mGenerating ui_plan_route_config.h[0m
+[ 44%] [34m[1mGenerating ui_textured_marker_config.h[0m
+[ 45%] [34m[1mGenerating ui_tf_frame_config.h[0m
+[ 46%] [34m[1mGenerating ui_robot_image_config.h[0m
+[ 47%] [34m[1mGenerating ui_route_config.h[0m
+[ 48%] [34m[1mGenerating ui_string_config.h[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_draw_polygon_plugin.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_canvas_click_filter.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_disparity_plugin.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_attitude_indicator_plugin.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_grid_plugin.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_float_plugin.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_coordinate_picker_plugin.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_laserscan_plugin.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_gps_plugin.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_measuring_plugin.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_image_plugin.cpp.o[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_marker_plugin.cpp.o[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_occupancy_grid_plugin.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_navsat_plugin.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_odometry_plugin.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_path_plugin.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_plan_route_plugin.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_point_click_publisher_plugin.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_placeable_window_proxy.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_pointcloud2_plugin.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_point_drawing_plugin.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_pose_plugin.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_robot_image_plugin.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_route_plugin.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_string_plugin.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_textured_marker_plugin.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_tf_frame_plugin.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/include/mapviz_plugins/moc_topic_select.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/attitude_indicator_plugin.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/canvas_click_filter.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/coordinate_picker_plugin.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/disparity_plugin.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/draw_polygon_plugin.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/float_plugin.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/gps_plugin.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/grid_plugin.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/image_plugin.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/laserscan_plugin.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/marker_plugin.cpp.o[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/measuring_plugin.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/navsat_plugin.cpp.o[0m
+[ 86%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/occupancy_grid_plugin.cpp.o[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/odometry_plugin.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/path_plugin.cpp.o[0m
+[ 89%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/placeable_window_proxy.cpp.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/plan_route_plugin.cpp.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/point_click_publisher_plugin.cpp.o[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/pointcloud2_plugin.cpp.o[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/point_drawing_plugin.cpp.o[0m
+[ 93%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/pose_plugin.cpp.o[0m
+[ 94%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/robot_image_plugin.cpp.o[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/route_plugin.cpp.o[0m
+[ 96%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/string_plugin.cpp.o[0m
+[ 97%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/textured_marker_plugin.cpp.o[0m
+[ 98%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/tf_frame_plugin.cpp.o[0m
+[ 99%] [32mBuilding CXX object CMakeFiles/mapviz_plugins.dir/src/topic_select.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libmapviz_plugins.so[0m
+[100%] Built target mapviz_plugins
+-- Install configuration: ""
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/pose_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/grid_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/marker_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/odometry_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/robot_image_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/measuring_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/occupancy_grid_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/topic_select.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/plan_route_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/canvas_click_filter.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/point_click_publisher_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/laserscan_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/coordinate_picker_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/path_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/image_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/placeable_window_proxy.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/textured_marker_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/navsat_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/float_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/tf_frame_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/point_drawing_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/attitude_indicator_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/draw_polygon_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/pointcloud2_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/string_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/move_base_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/gps_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/route_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/disparity_plugin.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/include/mapviz_plugins/ui_topicselect.h
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib/libmapviz_plugins.so
+-- Set runtime path of "/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib/libmapviz_plugins.so" to ""
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/mapviz_plugins.xml
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/environment/library_path.sh
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/environment/library_path.dsv
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/ament_index/resource_index/package_run_dependencies/mapviz_plugins
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/ament_index/resource_index/parent_prefix_path/mapviz_plugins
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/environment/ament_prefix_path.sh
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/environment/ament_prefix_path.dsv
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/environment/path.sh
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/environment/path.dsv
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/local_setup.bash
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/local_setup.sh
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/local_setup.zsh
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/local_setup.dsv
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/package.dsv
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/ament_index/resource_index/packages/mapviz_plugins
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/ament_index/resource_index/mapviz__pluginlib__plugin/mapviz_plugins
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/cmake/mapviz_pluginsConfig.cmake
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/cmake/mapviz_pluginsConfig-version.cmake
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/package.xml

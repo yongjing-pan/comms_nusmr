@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox_serialization
+CMAKE_SOURCE_DIR = /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox_serialization
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_serialization
+CMAKE_BINARY_DIR = /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_serialization
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -82,14 +82,14 @@ clean: CMakeFiles/ublox_serialization_uninstall.dir/clean
 CMakeFiles/uninstall.dir/all: CMakeFiles/ublox_serialization_uninstall.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_serialization/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_serialization/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_serialization/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_serialization/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_serialization/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_serialization/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -108,14 +108,14 @@ CMakeFiles/uninstall.dir/clean:
 CMakeFiles/ublox_serialization_uninstall.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ublox_serialization_uninstall.dir/build.make CMakeFiles/ublox_serialization_uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ublox_serialization_uninstall.dir/build.make CMakeFiles/ublox_serialization_uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_serialization/CMakeFiles --progress-num= "Built target ublox_serialization_uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_serialization/CMakeFiles --progress-num= "Built target ublox_serialization_uninstall"
 .PHONY : CMakeFiles/ublox_serialization_uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ublox_serialization_uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_serialization/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_serialization/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ublox_serialization_uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_serialization/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_serialization/CMakeFiles 0
 .PHONY : CMakeFiles/ublox_serialization_uninstall.dir/rule
 
 # Convenience name for target.

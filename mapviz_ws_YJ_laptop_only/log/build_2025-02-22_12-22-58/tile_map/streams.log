@@ -1,0 +1,107 @@
+[0.012s] Invoking command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map': AMENT_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/tile_map -DCMAKE_INSTALL_PREFIX=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map
+[0.075s] -- The CXX compiler identification is GNU 11.4.0
+[0.081s] -- Detecting CXX compiler ABI info
+[0.144s] -- Detecting CXX compiler ABI info - done
+[0.150s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.150s] -- Detecting CXX compile features
+[0.151s] -- Detecting CXX compile features - done
+[0.153s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.272s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.338s] -- Found mapviz: 2.4.5 (/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/cmake)
+[0.359s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[0.381s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.399s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.403s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.408s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.415s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.423s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.453s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.455s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.472s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.522s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.526s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.538s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.541s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.550s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.561s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.569s] -- Looking for C++ include pthread.h
+[0.656s] -- Looking for C++ include pthread.h - found
+[0.656s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.727s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.728s] -- Found Threads: TRUE  
+[0.768s] -- Found swri_math_util: 3.7.3 (/opt/ros/humble/share/swri_math_util/cmake)
+[0.772s] -- Found swri_transform_util: 3.7.3 (/opt/ros/humble/share/swri_transform_util/cmake)
+[0.823s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.824s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.824s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.895s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[0.922s] -- Found GLEW: /usr/include (found version "2.2.0") 
+[0.926s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.926s] -- Checking for module 'yaml-cpp'
+[0.939s] --   Found yaml-cpp, version 0.7.0
+[0.978s] -- Checking for module 'jsoncpp'
+[0.996s] --   Found jsoncpp, version 1.9.5
+[1.102s] -- Configuring done
+[1.127s] -- Generating done
+[1.132s] -- Build files have been written to: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map
+[1.143s] Invoked command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map' returned '0': AMENT_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/tile_map -DCMAKE_INSTALL_PREFIX=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map
+[1.143s] Invoking command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map': AMENT_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map -- -j20 -l20
+[1.177s] [  5%] [34m[1mGenerating include/tile_map/moc_bing_source.cpp[0m
+[1.179s] [ 10%] [34m[1mGenerating include/tile_map/moc_tile_source.cpp[0m
+[1.179s] [ 15%] [34m[1mGenerating include/tile_map/moc_wmts_source.cpp[0m
+[1.180s] [ 20%] [34m[1mGenerating include/tile_map/moc_image_cache.cpp[0m
+[1.201s] [ 25%] [32mBuilding CXX object CMakeFiles/tile_map.dir/src/texture_cache.cpp.o[0m
+[1.202s] [ 30%] [32mBuilding CXX object CMakeFiles/tile_map.dir/src/tile_source.cpp.o[0m
+[1.202s] [ 35%] [32mBuilding CXX object CMakeFiles/tile_map.dir/src/wmts_source.cpp.o[0m
+[1.203s] [ 40%] [32mBuilding CXX object CMakeFiles/tile_map.dir/src/image_cache.cpp.o[0m
+[1.204s] [ 45%] [32mBuilding CXX object CMakeFiles/tile_map.dir/include/tile_map/moc_image_cache.cpp.o[0m
+[1.204s] [ 50%] [32mBuilding CXX object CMakeFiles/tile_map.dir/include/tile_map/moc_tile_source.cpp.o[0m
+[1.204s] [ 55%] [32mBuilding CXX object CMakeFiles/tile_map.dir/include/tile_map/moc_bing_source.cpp.o[0m
+[1.204s] [ 60%] [32mBuilding CXX object CMakeFiles/tile_map.dir/src/bing_source.cpp.o[0m
+[1.206s] [ 65%] [32mBuilding CXX object CMakeFiles/tile_map.dir/src/tile_map_view.cpp.o[0m
+[1.207s] [ 70%] [32mBuilding CXX object CMakeFiles/tile_map.dir/include/tile_map/moc_wmts_source.cpp.o[0m
+[5.475s] [ 75%] [32m[1mLinking CXX static library libtile_map.a[0m
+[5.536s] [ 75%] Built target tile_map
+[5.546s] [ 80%] [34m[1mGenerating include/tile_map/moc_tile_map_plugin.cpp[0m
+[5.547s] [ 85%] [34m[1mGenerating ui_tile_map_config.h[0m
+[5.578s] [ 90%] [32mBuilding CXX object CMakeFiles/tile_map_plugin.dir/src/tile_map_plugin.cpp.o[0m
+[5.578s] [ 95%] [32mBuilding CXX object CMakeFiles/tile_map_plugin.dir/include/tile_map/moc_tile_map_plugin.cpp.o[0m
+[10.195s] [100%] [32m[1mLinking CXX shared library libtile_map_plugin.so[0m
+[11.175s] [100%] Built target tile_map_plugin
+[11.190s] Invoked command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map' returned '0': AMENT_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map -- -j20 -l20
+[11.190s] Invoking command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map': AMENT_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map
+[11.196s] -- Install configuration: ""
+[11.196s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/include/tile_map
+[11.196s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/include/tile_map/texture_cache.h
+[11.196s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/include/tile_map/tile_source.h
+[11.196s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/include/tile_map/tile_map_view.h
+[11.196s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/include/tile_map/tile_map_plugin.h
+[11.196s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/include/tile_map/image_cache.h
+[11.196s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/include/tile_map/bing_source.h
+[11.196s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/include/tile_map/wmts_source.h
+[11.197s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib/libtile_map.a
+[11.197s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib/libtile_map_plugin.so
+[11.199s] -- Set runtime path of "/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib/libtile_map_plugin.so" to ""
+[11.199s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/mapviz_plugins.xml
+[11.199s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/environment/library_path.sh
+[11.199s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/environment/library_path.dsv
+[11.199s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/ament_index/resource_index/package_run_dependencies/tile_map
+[11.199s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/ament_index/resource_index/parent_prefix_path/tile_map
+[11.199s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/environment/ament_prefix_path.sh
+[11.199s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/environment/ament_prefix_path.dsv
+[11.200s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/environment/path.sh
+[11.200s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/environment/path.dsv
+[11.200s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/local_setup.bash
+[11.200s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/local_setup.sh
+[11.200s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/local_setup.zsh
+[11.200s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/local_setup.dsv
+[11.200s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/package.dsv
+[11.200s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/ament_index/resource_index/packages/tile_map
+[11.200s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/ament_index/resource_index/mapviz__pluginlib__plugin/tile_map
+[11.200s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/cmake/ament_cmake_export_dependencies-extras.cmake
+[11.200s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/cmake/ament_cmake_export_include_directories-extras.cmake
+[11.200s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/cmake/ament_cmake_export_libraries-extras.cmake
+[11.200s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/cmake/tile_mapConfig.cmake
+[11.200s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/cmake/tile_mapConfig-version.cmake
+[11.200s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/package.xml
+[11.202s] Invoked command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map' returned '0': AMENT_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map

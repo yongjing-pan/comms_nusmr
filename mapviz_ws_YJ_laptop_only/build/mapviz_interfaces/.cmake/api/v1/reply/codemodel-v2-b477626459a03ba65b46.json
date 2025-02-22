@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-d59366ba1612d863c90a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "mapviz_interfaces__py",
+					"jsonFile" : "directory-mapviz_interfaces__py-75ad9fbd0da73f7ce0aa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_interfaces/mapviz_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "mapviz_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_mapviz_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_mapviz_interfaces_egg-6779b72eeb03045acec7.json",
+					"name" : "ament_cmake_python_build_mapviz_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_mapviz_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_mapviz_interfaces-7a3638232ff4e194d6f0.json",
+					"name" : "ament_cmake_python_copy_mapviz_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mapviz_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mapviz_interfaces-59d2b17635f6d5ce52a4.json",
+					"name" : "mapviz_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mapviz_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mapviz_interfaces__cpp-8cc8ce50114abb3cd8be.json",
+					"name" : "mapviz_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "mapviz_interfaces__py::@d7c61a4140e9769de0a6",
+					"jsonFile" : "target-mapviz_interfaces__py-1a10739c00961e8da0ed.json",
+					"name" : "mapviz_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mapviz_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mapviz_interfaces__rosidl_generator_c-56574d22a5405668caa4.json",
+					"name" : "mapviz_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mapviz_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mapviz_interfaces__rosidl_generator_py-f726df91f18e79ff106d.json",
+					"name" : "mapviz_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mapviz_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mapviz_interfaces__rosidl_typesupport_c-0364430649b93b6d9669.json",
+					"name" : "mapviz_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mapviz_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mapviz_interfaces__rosidl_typesupport_c__pyext-c49b5321188406e1b65e.json",
+					"name" : "mapviz_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mapviz_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mapviz_interfaces__rosidl_typesupport_cpp-ebe679f06519a3345ec1.json",
+					"name" : "mapviz_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mapviz_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mapviz_interfaces__rosidl_typesupport_fastrtps_c-5a833e8bb2e70c21ff24.json",
+					"name" : "mapviz_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mapviz_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mapviz_interfaces__rosidl_typesupport_fastrtps_c__pyext-d01c6f4b352631f2c768.json",
+					"name" : "mapviz_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mapviz_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mapviz_interfaces__rosidl_typesupport_fastrtps_cpp-de0957f8a3eeeac65f9d.json",
+					"name" : "mapviz_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mapviz_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mapviz_interfaces__rosidl_typesupport_introspection_c-eea4c46885a59027307b.json",
+					"name" : "mapviz_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mapviz_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mapviz_interfaces__rosidl_typesupport_introspection_c__pyext-534ff0197504dd31ed65.json",
+					"name" : "mapviz_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mapviz_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mapviz_interfaces__rosidl_typesupport_introspection_cpp-bdb3d6f0b8a2918ca2ee.json",
+					"name" : "mapviz_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mapviz_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mapviz_interfaces_uninstall-8ecb4489a13d1f717e26.json",
+					"name" : "mapviz_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-83790b7036e811bd4644.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_interfaces",
+		"source" : "/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/mapviz_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

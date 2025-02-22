@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/rtcm_msgs
+CMAKE_SOURCE_DIR = /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/rtcm_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs
+CMAKE_BINARY_DIR = /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs
 
 # Utility rule file for ament_cmake_python_copy_rtcm_msgs.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_rtcm_msgs.dir/compiler_depend.make
 include CMakeFiles/ament_cmake_python_copy_rtcm_msgs.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_rtcm_msgs:
-	/usr/bin/cmake -E copy_directory /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs/rosidl_generator_py/rtcm_msgs /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs/ament_cmake_python/rtcm_msgs/rtcm_msgs
+	/usr/bin/cmake -E copy_directory /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs/rosidl_generator_py/rtcm_msgs /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs/ament_cmake_python/rtcm_msgs/rtcm_msgs
 
 ament_cmake_python_copy_rtcm_msgs: CMakeFiles/ament_cmake_python_copy_rtcm_msgs
 ament_cmake_python_copy_rtcm_msgs: CMakeFiles/ament_cmake_python_copy_rtcm_msgs.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_copy_rtcm_msgs.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_rtcm_msgs.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_rtcm_msgs.dir/depend:
-	cd /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/rtcm_msgs /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/rtcm_msgs /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs/CMakeFiles/ament_cmake_python_copy_rtcm_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/rtcm_msgs /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/rtcm_msgs /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs/CMakeFiles/ament_cmake_python_copy_rtcm_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_copy_rtcm_msgs.dir/depend
 

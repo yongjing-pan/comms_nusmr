@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox_gps
+CMAKE_SOURCE_DIR = /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox_gps
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_gps
+CMAKE_BINARY_DIR = /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ublox_logger.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/ublox_logger.dir/progress.make
 include CMakeFiles/ublox_logger.dir/flags.make
 
 CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.o: CMakeFiles/ublox_logger.dir/flags.make
-CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.o: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox_gps/src/logger_node_pa.cpp
+CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.o: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox_gps/src/logger_node_pa.cpp
 CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.o: CMakeFiles/ublox_logger.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_gps/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.o -MF CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.o.d -o CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.o -c /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox_gps/src/logger_node_pa.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.o -MF CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.o.d -o CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.o -c /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox_gps/src/logger_node_pa.cpp
 
 CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox_gps/src/logger_node_pa.cpp > CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox_gps/src/logger_node_pa.cpp > CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.i
 
 CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox_gps/src/logger_node_pa.cpp -o CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox_gps/src/logger_node_pa.cpp -o CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.s
 
 CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.o: CMakeFiles/ublox_logger.dir/flags.make
-CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.o: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox_gps/src/raw_data_pa.cpp
+CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.o: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox_gps/src/raw_data_pa.cpp
 CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.o: CMakeFiles/ublox_logger.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_gps/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.o -MF CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.o.d -o CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.o -c /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox_gps/src/raw_data_pa.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.o -MF CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.o.d -o CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.o -c /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox_gps/src/raw_data_pa.cpp
 
 CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox_gps/src/raw_data_pa.cpp > CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox_gps/src/raw_data_pa.cpp > CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.i
 
 CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox_gps/src/raw_data_pa.cpp -o CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox_gps/src/raw_data_pa.cpp -o CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.s
 
 # Object files for target ublox_logger
 ublox_logger_OBJECTS = \
@@ -242,28 +242,28 @@ ublox_logger: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so
 ublox_logger: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
 ublox_logger: /opt/ros/humble/lib/libtracetools.so
 ublox_logger: /opt/ros/humble/lib/libclass_loader.so
-ublox_logger: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_fastrtps_c.so
-ublox_logger: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_fastrtps_cpp.so
-ublox_logger: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_introspection_c.so
-ublox_logger: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_introspection_cpp.so
-ublox_logger: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_cpp.so
-ublox_logger: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_generator_py.so
-ublox_logger: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_c.so
-ublox_logger: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs/lib/librtcm_msgs__rosidl_generator_c.so
+ublox_logger: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_fastrtps_c.so
+ublox_logger: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_fastrtps_cpp.so
+ublox_logger: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_introspection_c.so
+ublox_logger: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_introspection_cpp.so
+ublox_logger: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_cpp.so
+ublox_logger: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/lib/librtcm_msgs__rosidl_generator_py.so
+ublox_logger: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/lib/librtcm_msgs__rosidl_typesupport_c.so
+ublox_logger: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs/lib/librtcm_msgs__rosidl_generator_c.so
 ublox_logger: /opt/ros/humble/lib/libtf2.so
 ublox_logger: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
-ublox_logger: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox_msgs/lib/libublox_msgs__rosidl_typesupport_fastrtps_c.so
+ublox_logger: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/lib/libublox_msgs__rosidl_typesupport_fastrtps_c.so
 ublox_logger: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 ublox_logger: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 ublox_logger: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 ublox_logger: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 ublox_logger: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
-ublox_logger: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox_msgs/lib/libublox_msgs__rosidl_typesupport_introspection_c.so
+ublox_logger: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/lib/libublox_msgs__rosidl_typesupport_introspection_c.so
 ublox_logger: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
 ublox_logger: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 ublox_logger: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 ublox_logger: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
-ublox_logger: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox_msgs/lib/libublox_msgs__rosidl_typesupport_fastrtps_cpp.so
+ublox_logger: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/lib/libublox_msgs__rosidl_typesupport_fastrtps_cpp.so
 ublox_logger: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
 ublox_logger: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
 ublox_logger: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -271,31 +271,31 @@ ublox_logger: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fast
 ublox_logger: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 ublox_logger: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 ublox_logger: /opt/ros/humble/lib/librmw.so
-ublox_logger: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox_msgs/lib/libublox_msgs__rosidl_typesupport_introspection_cpp.so
+ublox_logger: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/lib/libublox_msgs__rosidl_typesupport_introspection_cpp.so
 ublox_logger: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
 ublox_logger: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 ublox_logger: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 ublox_logger: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 ublox_logger: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 ublox_logger: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
-ublox_logger: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox_msgs/lib/libublox_msgs__rosidl_generator_py.so
+ublox_logger: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/lib/libublox_msgs__rosidl_generator_py.so
 ublox_logger: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
 ublox_logger: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
 ublox_logger: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 ublox_logger: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
 ublox_logger: /usr/lib/x86_64-linux-gnu/libpython3.10.so
-ublox_logger: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox_msgs/lib/libublox_msgs__rosidl_typesupport_c.so
+ublox_logger: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/lib/libublox_msgs__rosidl_typesupport_c.so
 ublox_logger: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
 ublox_logger: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
 ublox_logger: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 ublox_logger: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
-ublox_logger: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox_msgs/lib/libublox_msgs__rosidl_generator_c.so
+ublox_logger: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/lib/libublox_msgs__rosidl_generator_c.so
 ublox_logger: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
 ublox_logger: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 ublox_logger: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 ublox_logger: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
-ublox_logger: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox_msgs/lib/libublox_msgs_lib.so
-ublox_logger: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox_msgs/lib/libublox_msgs__rosidl_typesupport_cpp.so
+ublox_logger: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/lib/libublox_msgs_lib.so
+ublox_logger: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/ublox_msgs/lib/libublox_msgs__rosidl_typesupport_cpp.so
 ublox_logger: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 ublox_logger: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 ublox_logger: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
@@ -306,7 +306,7 @@ ublox_logger: /opt/ros/humble/lib/librcpputils.so
 ublox_logger: /opt/ros/humble/lib/librosidl_runtime_c.so
 ublox_logger: /opt/ros/humble/lib/librcutils.so
 ublox_logger: CMakeFiles/ublox_logger.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_gps/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ublox_logger"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ublox_logger"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ublox_logger.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -318,6 +318,6 @@ CMakeFiles/ublox_logger.dir/clean:
 .PHONY : CMakeFiles/ublox_logger.dir/clean
 
 CMakeFiles/ublox_logger.dir/depend:
-	cd /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_gps && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox_gps /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox_gps /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_gps /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_gps /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_gps/CMakeFiles/ublox_logger.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox_gps /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox_gps /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox_gps/CMakeFiles/ublox_logger.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ublox_logger.dir/depend
 

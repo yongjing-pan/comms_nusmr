@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/fix2nmea
+CMAKE_SOURCE_DIR = /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/fix2nmea
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/fix2nmea
+CMAKE_BINARY_DIR = /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/fix2nmea
 
 # Utility rule file for fix2nmea_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/fix2nmea_uninstall.dir/compiler_depend.make
 include CMakeFiles/fix2nmea_uninstall.dir/progress.make
 
 CMakeFiles/fix2nmea_uninstall:
-	/usr/bin/cmake -P /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/fix2nmea/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/fix2nmea/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 fix2nmea_uninstall: CMakeFiles/fix2nmea_uninstall
 fix2nmea_uninstall: CMakeFiles/fix2nmea_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/fix2nmea_uninstall.dir/clean:
 .PHONY : CMakeFiles/fix2nmea_uninstall.dir/clean
 
 CMakeFiles/fix2nmea_uninstall.dir/depend:
-	cd /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/fix2nmea && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/fix2nmea /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/fix2nmea /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/fix2nmea /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/fix2nmea /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/fix2nmea/CMakeFiles/fix2nmea_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/fix2nmea && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/fix2nmea /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/fix2nmea /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/fix2nmea /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/fix2nmea /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/fix2nmea/CMakeFiles/fix2nmea_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/fix2nmea_uninstall.dir/depend
 

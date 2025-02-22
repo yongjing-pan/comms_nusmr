@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-0140f34cfe537a899af8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mapviz",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "mapviz::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mapviz-a62fa3c5aa1afa611bca.json",
+					"name" : "mapviz",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mapviz_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mapviz_uninstall-a7c94971f36d77151c4a.json",
+					"name" : "mapviz_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rqt_mapviz::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rqt_mapviz-a0e3f4f74bfd8295a48d.json",
+					"name" : "rqt_mapviz",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-594c77ea0a81d2715bc9.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz",
+		"source" : "/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/mapviz"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

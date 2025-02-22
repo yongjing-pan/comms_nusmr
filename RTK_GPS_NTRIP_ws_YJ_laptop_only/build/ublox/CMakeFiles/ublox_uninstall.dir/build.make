@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox
+CMAKE_SOURCE_DIR = /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox
+CMAKE_BINARY_DIR = /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox
 
 # Utility rule file for ublox_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ublox_uninstall.dir/compiler_depend.make
 include CMakeFiles/ublox_uninstall.dir/progress.make
 
 CMakeFiles/ublox_uninstall:
-	/usr/bin/cmake -P /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 ublox_uninstall: CMakeFiles/ublox_uninstall
 ublox_uninstall: CMakeFiles/ublox_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ublox_uninstall.dir/clean:
 .PHONY : CMakeFiles/ublox_uninstall.dir/clean
 
 CMakeFiles/ublox_uninstall.dir/depend:
-	cd /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ublox /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox/CMakeFiles/ublox_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/ublox /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/ublox/CMakeFiles/ublox_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ublox_uninstall.dir/depend
 

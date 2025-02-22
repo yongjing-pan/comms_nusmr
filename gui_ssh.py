@@ -8,6 +8,7 @@ import paramiko
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import NavSatFix 
+ 
 
 # Function to send bash commands to the rover
 def send_bash_command_via_ssh(command, host):
@@ -263,6 +264,8 @@ def run_gps_ros_node(gui_window):
     gps_node.destroy_node()
     rclpy.shutdown()
 
+def 
+
 def main(args=None):
     app = QApplication(sys.argv)
     window = MarsRoverGUI()
@@ -272,6 +275,7 @@ def main(args=None):
     gps_ros_thread = threading.Thread(target=run_gps_ros_node, args=(window,), daemon=True)
     gps_ros_thread.start() 
     sys.exit(app.exec_())
+ 
 
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically

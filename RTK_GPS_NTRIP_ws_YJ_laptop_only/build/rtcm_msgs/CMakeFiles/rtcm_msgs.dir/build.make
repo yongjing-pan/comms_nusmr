@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/rtcm_msgs
+CMAKE_SOURCE_DIR = /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/rtcm_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs
+CMAKE_BINARY_DIR = /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs
 
 # Utility rule file for rtcm_msgs.
 
@@ -66,7 +66,7 @@ include CMakeFiles/rtcm_msgs.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/rtcm_msgs.dir/progress.make
 
-CMakeFiles/rtcm_msgs: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/rtcm_msgs/msg/Message.msg
+CMakeFiles/rtcm_msgs: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/rtcm_msgs/msg/Message.msg
 CMakeFiles/rtcm_msgs: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 CMakeFiles/rtcm_msgs: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 CMakeFiles/rtcm_msgs: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -113,6 +113,6 @@ CMakeFiles/rtcm_msgs.dir/clean:
 .PHONY : CMakeFiles/rtcm_msgs.dir/clean
 
 CMakeFiles/rtcm_msgs.dir/depend:
-	cd /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/rtcm_msgs /home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/rtcm_msgs /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs/CMakeFiles/rtcm_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/rtcm_msgs /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/src/RTK_GPS_NTRIP/rtcm_msgs /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs/CMakeFiles/rtcm_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rtcm_msgs.dir/depend
 

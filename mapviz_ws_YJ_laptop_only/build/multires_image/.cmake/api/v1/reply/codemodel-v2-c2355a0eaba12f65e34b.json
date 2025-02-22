@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c48bb09f495086dde692.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "multires_image",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "multires_image::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-multires_image-633e93cccea79bb446d5.json",
+					"name" : "multires_image",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "multires_image_plugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-multires_image_plugin-fb95e636cf6061fc799d.json",
+					"name" : "multires_image_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "multires_image_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-multires_image_uninstall-31c0b567466340ec3bb4.json",
+					"name" : "multires_image_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "multires_view_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-multires_view_node-2aa067f8bc4da52cc25b.json",
+					"name" : "multires_view_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "multires_widget::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-multires_widget-dbff66ab3e6807751e1b.json",
+					"name" : "multires_widget",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-9bb521266c3e1c0f3e44.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/multires_image",
+		"source" : "/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/multires_image"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

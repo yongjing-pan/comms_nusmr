@@ -1,0 +1,6 @@
+-I/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/tile_map
+-I/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map
+-DQT_NO_KEYWORDS
+-o
+/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map/include/tile_map/moc_wmts_source.cpp
+/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/tile_map/include/tile_map/wmts_source.h

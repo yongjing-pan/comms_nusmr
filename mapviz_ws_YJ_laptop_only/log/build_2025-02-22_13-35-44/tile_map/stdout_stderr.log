@@ -1,0 +1,37 @@
+[35m[1mConsolidate compiler generated dependencies of target tile_map[0m
+[ 75%] Built target tile_map
+[35m[1mConsolidate compiler generated dependencies of target tile_map_plugin[0m
+[100%] Built target tile_map_plugin
+-- Install configuration: ""
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/include/tile_map
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/include/tile_map/texture_cache.h
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/include/tile_map/tile_source.h
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/include/tile_map/tile_map_view.h
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/include/tile_map/tile_map_plugin.h
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/include/tile_map/image_cache.h
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/include/tile_map/bing_source.h
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/include/tile_map/wmts_source.h
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib/libtile_map.a
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib/libtile_map_plugin.so
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/mapviz_plugins.xml
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/environment/library_path.sh
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/environment/library_path.dsv
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/ament_index/resource_index/package_run_dependencies/tile_map
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/ament_index/resource_index/parent_prefix_path/tile_map
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/environment/ament_prefix_path.sh
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/environment/path.sh
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/environment/path.dsv
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/local_setup.bash
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/local_setup.sh
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/local_setup.zsh
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/local_setup.dsv
+-- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/package.dsv
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/ament_index/resource_index/packages/tile_map
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/ament_index/resource_index/mapviz__pluginlib__plugin/tile_map
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/cmake/tile_mapConfig.cmake
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/cmake/tile_mapConfig-version.cmake
+-- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/package.xml

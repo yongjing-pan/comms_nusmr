@@ -1,8 +1,8 @@
-# Install script for directory: /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/rtcm_msgs/rtcm_msgs__py
+# Install script for directory: /home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/build/rtcm_msgs/rtcm_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/rtcm_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/yongjing-ub22/comms_nusmr/RTK_GPS_NTRIP_ws_YJ_laptop_only/install/rtcm_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
