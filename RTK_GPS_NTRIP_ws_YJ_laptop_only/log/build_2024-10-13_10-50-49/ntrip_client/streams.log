@@ -1,0 +1,28 @@
+[0.424s] Invoking command in '/home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ntrip_client': PYTHONPATH=/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ntrip_client/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ntrip_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/ntrip_client build --build-base /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ntrip_client/build install --record /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ntrip_client/install.log --single-version-externally-managed install_data
+[0.593s] running egg_info
+[0.593s] writing ../../../build/ntrip_client/ntrip_client.egg-info/PKG-INFO
+[0.593s] writing dependency_links to ../../../build/ntrip_client/ntrip_client.egg-info/dependency_links.txt
+[0.594s] writing requirements to ../../../build/ntrip_client/ntrip_client.egg-info/requires.txt
+[0.594s] writing top-level names to ../../../build/ntrip_client/ntrip_client.egg-info/top_level.txt
+[0.595s] reading manifest file '../../../build/ntrip_client/ntrip_client.egg-info/SOURCES.txt'
+[0.595s] adding license file 'LICENSE'
+[0.595s] writing manifest file '../../../build/ntrip_client/ntrip_client.egg-info/SOURCES.txt'
+[0.595s] running build
+[0.596s] running build_py
+[0.596s] running build_scripts
+[0.596s] running install
+[0.596s] running install_lib
+[0.596s] byte-compiling /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ntrip_client/lib/python3.10/site-packages/ntrip_client/ntrip_client.py to ntrip_client.cpython-310.pyc
+[0.598s] byte-compiling /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ntrip_client/lib/python3.10/site-packages/ntrip_client/nmea_parser.py to nmea_parser.cpython-310.pyc
+[0.598s] byte-compiling /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ntrip_client/lib/python3.10/site-packages/ntrip_client/__init__.py to __init__.cpython-310.pyc
+[0.598s] byte-compiling /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ntrip_client/lib/python3.10/site-packages/ntrip_client/rtcm_parser.py to rtcm_parser.cpython-310.pyc
+[0.598s] running install_data
+[0.598s] copying launch/ntrip_client_launch.py -> /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ntrip_client/share/ntrip_client
+[0.599s] running install_egg_info
+[0.600s] Copying ../../../build/ntrip_client/ntrip_client.egg-info to /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ntrip_client/lib/python3.10/site-packages/ntrip_client-1.2.0-py3.10.egg-info
+[0.600s] running install_scripts
+[0.612s] creating /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ntrip_client/lib/ntrip_client
+[0.612s] copying /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ntrip_client/build/scripts-3.10/ntrip_ros.py -> /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ntrip_client/lib/ntrip_client
+[0.612s] changing mode of /home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ntrip_client/lib/ntrip_client/ntrip_ros.py to 775
+[0.613s] writing list of installed files to '/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ntrip_client/install.log'
+[0.631s] Invoked command in '/home/yongjing-ub22/RTK_GPS_NTRIP_ws/src/RTK_GPS_NTRIP/ntrip_client' returned '0': PYTHONPATH=/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ntrip_client/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ntrip_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/ntrip_client build --build-base /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ntrip_client/build install --record /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ntrip_client/install.log --single-version-externally-managed install_data

@@ -1,0 +1,25 @@
+[0.005s] Invoking command in '/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_msgs': AMENT_PREFIX_PATH=/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox_serialization:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox_serialization:/opt/ros/humble /usr/bin/cmake --build /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_msgs -- -j20 -l20
+[0.089s] [  0%] Built target ublox_msgs__cpp
+[0.103s] [ 12%] Built target ublox_msgs__rosidl_generator_c
+[0.124s] [ 24%] Built target ublox_msgs__rosidl_typesupport_cpp
+[0.129s] [ 24%] Built target ament_cmake_python_copy_ublox_msgs
+[0.130s] [ 37%] Built target ublox_msgs__rosidl_typesupport_c
+[0.131s] [ 49%] Built target ublox_msgs__rosidl_typesupport_introspection_cpp
+[0.132s] [ 61%] Built target ublox_msgs__rosidl_typesupport_fastrtps_cpp
+[0.134s] [ 74%] Built target ublox_msgs__rosidl_typesupport_introspection_c
+[0.141s] [ 75%] Built target ublox_msgs_lib
+[0.143s] [ 88%] Built target ublox_msgs__rosidl_typesupport_fastrtps_c
+[0.157s] [ 88%] Built target ublox_msgs
+[0.175s] [ 88%] Built target ublox_msgs__py
+[0.210s] [100%] Built target ublox_msgs__rosidl_generator_py
+[0.228s] [100%] Built target ublox_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.229s] [100%] Built target ublox_msgs__rosidl_typesupport_introspection_c__pyext
+[0.229s] [100%] Built target ublox_msgs__rosidl_typesupport_c__pyext
+[0.294s] running egg_info
+[0.294s] writing ublox_msgs.egg-info/PKG-INFO
+[0.294s] writing dependency_links to ublox_msgs.egg-info/dependency_links.txt
+[0.295s] writing top-level names to ublox_msgs.egg-info/top_level.txt
+[0.296s] reading manifest file 'ublox_msgs.egg-info/SOURCES.txt'
+[0.297s] writing manifest file 'ublox_msgs.egg-info/SOURCES.txt'
+[0.313s] [100%] Built target ament_cmake_python_build_ublox_msgs_egg
+[0.323s] Invoked command in '/home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_msgs' returned '0': AMENT_PREFIX_PATH=/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox_serialization:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yongjing-ub22/RTK_GPS_NTRIP_ws/install/ublox_serialization:/opt/ros/humble /usr/bin/cmake --build /home/yongjing-ub22/RTK_GPS_NTRIP_ws/build/ublox_msgs -- -j20 -l20

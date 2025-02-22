@@ -16,7 +16,7 @@ def send_bash_command_via_ssh(command, host):
         rover_username = 'orinnx'
         rover_password = 'pw'
     else:
-        rover_ip_addr = '192.168.1.17'
+        rover_ip_addr = '192.168.153.136'
         rover_username = 'orangepi'
         rover_password = 'orangepi'
     ssh = paramiko.SSHClient()
