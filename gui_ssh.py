@@ -73,7 +73,7 @@ class MarsRoverGUI(QWidget):
         # Set up the window
         self.setWindowTitle("Mars Rover Video Stream Viewer")
         self.setGeometry(1200, 0, 300, 1200)
-        self.move(1200,0)
+        self.move(1618,0)
 
         # Main Layout (Vertical stack for the whole window)
         self.main_layout = QVBoxLayout(self)
@@ -229,7 +229,11 @@ class MarsRoverGUI(QWidget):
                 print("Closing application. Stopping all streams...")
                 self.stop_ffmpeg_streams_via_ssh('orin')
                 self.stop_ffmpeg_streams_via_ssh('opi')
+
+                stop_ffplay_command = "pkill -f ffmpeg"
+                process = subprocess.Popen(stop_ffplay_command, shell=True)
                 event.accept()
+                
             else:
                 event.ignore()
 
