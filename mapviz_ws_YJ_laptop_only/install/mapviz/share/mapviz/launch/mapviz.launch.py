@@ -5,8 +5,14 @@ import launch_ros.actions
 
 '''
  "latitude": 1.2987358,
-                        "longitude": 103.7715786,
-                        "altitude": 102.26,
+ "longitude": 103.7715786,
+ "altitude": 102.26,
+
+                     {"name": "back_40",
+                        "latitude": 29.447507,
+                        "longitude": -98.629367,
+                        "altitude": 200.0,
+                        "heading": 0.0}
 '''
 
 
@@ -26,15 +32,11 @@ def generate_launch_description():
                 {"local_xy_origin": "swri"},
                 {"local_xy_origins": """[
                     {"name": "swri",
-                        "latitude": 0.0,
-                        "longitude": 0.0,
-                        "altitude": 0.0,
+                       "latitude": 1.2987358,
+                        "longitude": 103.7715786,
+                        "altitude": 102.26,
                         "heading": 0.0},
-                    {"name": "back_40",
-                        "latitude": 29.447507,
-                        "longitude": -98.629367,
-                        "altitude": 200.0,
-                        "heading": 0.0}
+
                 ]"""},
             ]
         ),
