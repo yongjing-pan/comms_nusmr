@@ -183,4 +183,55 @@ class MarsRoverGUI(QWidget):
 
     def stop_ffmpeg_streams_via_ssh(self, host):
         if host == 'orin':
-            rover_ip_addr = '192.168.1
+            rover_ip_addr = '192.168.1.16'
+        else:
+            rover_ip_addr = '192.168.153.136'
+        bash_command = "pkill -9 ffmpeg"
+        send_bash_command_via_ssh(bash_command, rover_ip_addr)
+
+    def closeEvent(self, event):
+        reply = QMessageBox.question(self, 'Quit', 'Are you sure you want to quit?',
+                                     QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+        if reply == QMessageBox.Yes:
+            for process in self.current_processes.values():
+                if process:
+                    process.terminate()  # Terminate any ongoing streams
+            event.accept()
+
+    def update_gps_data(self, gps_data):
+        self.gps_label.setText(f"Lat: {gps_data.latitude}, Lon: {gps_data.longitude}")
+        
+class GPSSubscriber(Node):
+    def __init__(self, gui_callback):
+        super().__init__('gps_subscriber')
+        self.subscription = self.create_subscription(
+            NavSatFix,
+            'gps/fix',
+            self.listener_callback,
+            10)
+        self.subscription  # prevent unused variable warning
+        self.gui_callback = gui_callback
+
+    def listener_callback(self, msg):
+        gps_data = msg
+        self.gui_callback(gps_data)
+
+def run_gps_ros_node(gui_callback):
+    rclpy.init()
+    gps_subscriber = GPSSubscriber(gui_callback)
+    rclpy.spin(gps_subscriber)
+    gps_subscriber.destroy_node()
+    rclpy.shutdown()
+
+def main():
+    app = QApplication(sys.argv)
+    gui = MarsRoverGUI()
+
+    # Start the ROS node for GPS data
+    threading.Thread(target=run_gps_ros_node, args=(gui.update_gps_data,), daemon=True).start()
+
+    gui.show()
+    sys.exit(app.exec_())
+
+if __name__ == '__main__':
+    main()
