@@ -1,0 +1,577 @@
+[0.074s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.074s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7e57e135b220>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7e57e131d720>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7e57e131d720>>, mixin_verb=('build',))
+[0.196s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.197s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs) by extensions ['colcon_pkg']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs) by extension 'colcon_pkg'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs) by extensions ['colcon_meta']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs) by extension 'colcon_meta'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs) by extensions ['ros']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs) by extension 'ros'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs) by extensions ['cmake', 'python']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs) by extension 'cmake'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs) by extension 'python'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs) by extensions ['python_setup_py']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs) by extension 'python_setup_py'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_layouts) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_layouts) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_layouts) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_layouts) by extensions ['colcon_pkg']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_layouts) by extension 'colcon_pkg'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_layouts) by extensions ['colcon_meta']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_layouts) by extension 'colcon_meta'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_layouts) by extensions ['ros']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_layouts) by extension 'ros'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_layouts) by extensions ['cmake', 'python']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_layouts) by extension 'cmake'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_layouts) by extension 'python'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_layouts) by extensions ['python_setup_py']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_layouts) by extension 'python_setup_py'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_plugins) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_plugins) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_plugins) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_plugins) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_plugins) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_plugins) by extension 'colcon_meta'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_plugins) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_plugins) by extension 'ros'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_plugins) by extensions ['cmake', 'python']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_plugins) by extension 'cmake'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_plugins) by extension 'python'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_plugins) by extensions ['python_setup_py']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/_plugins) by extension 'python_setup_py'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets) by extension 'colcon_meta'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets) by extension 'ros'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets) by extensions ['cmake', 'python']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets) by extension 'cmake'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets) by extension 'python'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets) by extensions ['python_setup_py']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets) by extension 'python_setup_py'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/images) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/images) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/images) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/images) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/images) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/images) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/images) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/images) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/images) by extension 'ros'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/images) by extensions ['cmake', 'python']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/images) by extension 'cmake'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/images) by extension 'python'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/images) by extensions ['python_setup_py']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/images) by extension 'python_setup_py'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/js) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/js) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/js) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/js) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/js) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/js) by extensions ['colcon_meta']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/js) by extension 'colcon_meta'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/js) by extensions ['ros']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/js) by extension 'ros'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/js) by extensions ['cmake', 'python']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/js) by extension 'cmake'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/js) by extension 'python'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/js) by extensions ['python_setup_py']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/assets/js) by extension 'python_setup_py'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/guides) by extensions ['ignore', 'ignore_ament_install']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/guides) by extension 'ignore'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/guides) by extension 'ignore_ament_install'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/guides) by extensions ['colcon_pkg']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/guides) by extension 'colcon_pkg'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/guides) by extensions ['colcon_meta']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/guides) by extension 'colcon_meta'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/guides) by extensions ['ros']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/guides) by extension 'ros'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/guides) by extensions ['cmake', 'python']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/guides) by extension 'cmake'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/guides) by extension 'python'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/guides) by extensions ['python_setup_py']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/docs/guides) by extension 'python_setup_py'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz) by extension 'ignore'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz) by extension 'ignore_ament_install'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz) by extensions ['colcon_pkg']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz) by extension 'colcon_pkg'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz) by extensions ['colcon_meta']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz) by extension 'colcon_meta'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz) by extensions ['ros']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz) by extension 'ros'
+[0.217s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mapviz' with type 'ros.ament_cmake' and name 'mapviz'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz_interfaces) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz_interfaces) by extension 'ignore_ament_install'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz_interfaces) by extensions ['colcon_pkg']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz_interfaces) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz_interfaces) by extensions ['colcon_meta']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz_interfaces) by extension 'colcon_meta'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz_interfaces) by extensions ['ros']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz_interfaces) by extension 'ros'
+[0.218s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mapviz_interfaces' with type 'ros.ament_cmake' and name 'mapviz_interfaces'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz_plugins) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz_plugins) by extension 'ignore_ament_install'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz_plugins) by extensions ['colcon_pkg']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz_plugins) by extension 'colcon_pkg'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz_plugins) by extensions ['colcon_meta']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz_plugins) by extension 'colcon_meta'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz_plugins) by extensions ['ros']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/mapviz_plugins) by extension 'ros'
+[0.220s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mapviz_plugins' with type 'ros.ament_cmake' and name 'mapviz_plugins'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/multires_image) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/multires_image) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/multires_image) by extension 'ignore_ament_install'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/multires_image) by extensions ['colcon_pkg']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/multires_image) by extension 'colcon_pkg'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/multires_image) by extensions ['colcon_meta']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/multires_image) by extension 'colcon_meta'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/multires_image) by extensions ['ros']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/multires_image) by extension 'ros'
+[0.221s] DEBUG:colcon.colcon_core.package_identification:Package 'src/multires_image' with type 'ros.ament_cmake' and name 'multires_image'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_publisher) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_publisher) by extension 'ignore_ament_install'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_publisher) by extensions ['colcon_pkg']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_publisher) by extension 'colcon_pkg'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_publisher) by extensions ['colcon_meta']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_publisher) by extension 'colcon_meta'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_publisher) by extensions ['ros']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_publisher) by extension 'ros'
+[0.221s] DEBUG:colcon.colcon_core.package_identification:Package 'src/path_publisher' with type 'ros.ament_python' and name 'path_publisher'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/tile_map) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/tile_map) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/tile_map) by extension 'ignore_ament_install'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/tile_map) by extensions ['colcon_pkg']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/tile_map) by extension 'colcon_pkg'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/tile_map) by extensions ['colcon_meta']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/tile_map) by extension 'colcon_meta'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/tile_map) by extensions ['ros']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/tile_map) by extension 'ros'
+[0.222s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tile_map' with type 'ros.ament_cmake' and name 'tile_map'
+[0.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.237s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.239s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install
+[0.240s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 394 installed packages in /opt/ros/humble
+[0.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'mapviz_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'mapviz_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'mapviz_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.268s] Level 5:colcon.colcon_core.verb:set package 'mapviz_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'mapviz_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'mapviz_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'mapviz_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'mapviz_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'mapviz_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.269s] DEBUG:colcon.colcon_core.verb:Building package 'mapviz_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces', 'merge_install': False, 'path': '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/mapviz_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'path_publisher' build argument 'cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'path_publisher' build argument 'cmake_target' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'path_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'path_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'path_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'path_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'path_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'path_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'path_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.269s] DEBUG:colcon.colcon_core.verb:Building package 'path_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/path_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher', 'merge_install': False, 'path': '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/path_publisher', 'symlink_install': False, 'test_result_base': None}
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'mapviz' build argument 'cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'mapviz' build argument 'cmake_target' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'mapviz' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'mapviz' build argument 'cmake_clean_cache' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'mapviz' build argument 'cmake_clean_first' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'mapviz' build argument 'cmake_force_configure' from command line to 'False'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'mapviz' build argument 'ament_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'mapviz' build argument 'catkin_cmake_args' from command line to 'None'
+[0.269s] Level 5:colcon.colcon_core.verb:set package 'mapviz' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.269s] DEBUG:colcon.colcon_core.verb:Building package 'mapviz' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz', 'merge_install': False, 'path': '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/mapviz', 'symlink_install': False, 'test_result_base': None}
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'mapviz_plugins' build argument 'cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'mapviz_plugins' build argument 'cmake_target' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'mapviz_plugins' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'mapviz_plugins' build argument 'cmake_clean_cache' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'mapviz_plugins' build argument 'cmake_clean_first' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'mapviz_plugins' build argument 'cmake_force_configure' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'mapviz_plugins' build argument 'ament_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'mapviz_plugins' build argument 'catkin_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'mapviz_plugins' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.270s] DEBUG:colcon.colcon_core.verb:Building package 'mapviz_plugins' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_plugins', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins', 'merge_install': False, 'path': '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/mapviz_plugins', 'symlink_install': False, 'test_result_base': None}
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'multires_image' build argument 'cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'multires_image' build argument 'cmake_target' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'multires_image' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'multires_image' build argument 'cmake_clean_cache' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'multires_image' build argument 'cmake_clean_first' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'multires_image' build argument 'cmake_force_configure' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'multires_image' build argument 'ament_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'multires_image' build argument 'catkin_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'multires_image' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.270s] DEBUG:colcon.colcon_core.verb:Building package 'multires_image' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/multires_image', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image', 'merge_install': False, 'path': '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/multires_image', 'symlink_install': False, 'test_result_base': None}
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'tile_map' build argument 'cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'tile_map' build argument 'cmake_target' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'tile_map' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'tile_map' build argument 'cmake_clean_cache' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'tile_map' build argument 'cmake_clean_first' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'tile_map' build argument 'cmake_force_configure' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'tile_map' build argument 'ament_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'tile_map' build argument 'catkin_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'tile_map' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.271s] DEBUG:colcon.colcon_core.verb:Building package 'tile_map' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map', 'merge_install': False, 'path': '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/tile_map', 'symlink_install': False, 'test_result_base': None}
+[0.271s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.272s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.272s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/mapviz_interfaces' with build type 'ament_cmake'
+[0.272s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/mapviz_interfaces'
+[0.274s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.274s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.274s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.277s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/path_publisher' with build type 'ament_python'
+[0.277s] Level 1:colcon.colcon_core.shell:create_environment_hook('path_publisher', 'ament_prefix_path')
+[0.277s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/share/path_publisher/hook/ament_prefix_path.ps1'
+[0.278s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/share/path_publisher/hook/ament_prefix_path.dsv'
+[0.278s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/share/path_publisher/hook/ament_prefix_path.sh'
+[0.279s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.279s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.286s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble /usr/bin/cmake --build /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_interfaces -- -j20 -l20
+[0.559s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/path_publisher'
+[0.559s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.559s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.646s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble /usr/bin/cmake --build /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_interfaces -- -j20 -l20
+[0.656s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble /usr/bin/cmake --install /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_interfaces
+[0.720s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mapviz_interfaces)
+[0.722s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble /usr/bin/cmake --install /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_interfaces
+[0.724s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces' for CMake module files
+[0.725s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces' for CMake config files
+[0.725s] Level 1:colcon.colcon_core.shell:create_environment_hook('mapviz_interfaces', 'cmake_prefix_path')
+[0.726s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/hook/cmake_prefix_path.ps1'
+[0.726s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/hook/cmake_prefix_path.dsv'
+[0.726s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/hook/cmake_prefix_path.sh'
+[0.727s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib'
+[0.727s] Level 1:colcon.colcon_core.shell:create_environment_hook('mapviz_interfaces', 'ld_library_path_lib')
+[0.728s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/hook/ld_library_path_lib.ps1'
+[0.728s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/hook/ld_library_path_lib.dsv'
+[0.728s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/hook/ld_library_path_lib.sh'
+[0.729s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/bin'
+[0.729s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib/pkgconfig/mapviz_interfaces.pc'
+[0.729s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib/python3.10/site-packages'
+[0.730s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/bin'
+[0.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/package.ps1'
+[0.731s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/package.dsv'
+[0.732s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/package.sh'
+[0.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/package.bash'
+[0.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/package.zsh'
+[0.734s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/colcon-core/packages/mapviz_interfaces)
+[0.735s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mapviz_interfaces)
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces' for CMake module files
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces' for CMake config files
+[0.736s] Level 1:colcon.colcon_core.shell:create_environment_hook('mapviz_interfaces', 'cmake_prefix_path')
+[0.736s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/hook/cmake_prefix_path.ps1'
+[0.736s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/hook/cmake_prefix_path.dsv'
+[0.737s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/hook/cmake_prefix_path.sh'
+[0.737s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib'
+[0.737s] Level 1:colcon.colcon_core.shell:create_environment_hook('mapviz_interfaces', 'ld_library_path_lib')
+[0.738s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/hook/ld_library_path_lib.ps1'
+[0.738s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/hook/ld_library_path_lib.dsv'
+[0.738s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/hook/ld_library_path_lib.sh'
+[0.739s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/bin'
+[0.739s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib/pkgconfig/mapviz_interfaces.pc'
+[0.739s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib/python3.10/site-packages'
+[0.739s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/bin'
+[0.740s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/package.ps1'
+[0.741s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/package.dsv'
+[0.741s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/package.sh'
+[0.742s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/package.bash'
+[0.742s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/mapviz_interfaces/package.zsh'
+[0.743s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/share/colcon-core/packages/mapviz_interfaces)
+[0.743s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/mapviz' with build type 'ament_cmake'
+[0.744s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/mapviz'
+[0.745s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.745s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.759s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz': CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz -- -j20 -l20
+[0.897s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz' returned '0': CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz -- -j20 -l20
+[0.900s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz': CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz
+[0.914s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mapviz)
+[0.915s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz' for CMake module files
+[0.915s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz' returned '0': CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz
+[0.916s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz' for CMake config files
+[0.916s] Level 1:colcon.colcon_core.shell:create_environment_hook('mapviz', 'cmake_prefix_path')
+[0.917s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/hook/cmake_prefix_path.ps1'
+[0.917s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/hook/cmake_prefix_path.dsv'
+[0.918s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/hook/cmake_prefix_path.sh'
+[0.919s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib'
+[0.919s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/bin'
+[0.919s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib/pkgconfig/mapviz.pc'
+[0.919s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib/python3.10/site-packages'
+[0.919s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/bin'
+[0.920s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/package.ps1'
+[0.920s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/package.dsv'
+[0.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/package.sh'
+[0.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/package.bash'
+[0.922s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/package.zsh'
+[0.922s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/colcon-core/packages/mapviz)
+[0.923s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mapviz)
+[0.923s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz' for CMake module files
+[0.923s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz' for CMake config files
+[0.924s] Level 1:colcon.colcon_core.shell:create_environment_hook('mapviz', 'cmake_prefix_path')
+[0.924s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/hook/cmake_prefix_path.ps1'
+[0.924s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/hook/cmake_prefix_path.dsv'
+[0.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/hook/cmake_prefix_path.sh'
+[0.925s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib'
+[0.926s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/bin'
+[0.926s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib/pkgconfig/mapviz.pc'
+[0.926s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib/python3.10/site-packages'
+[0.926s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/bin'
+[0.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/package.ps1'
+[0.927s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/package.dsv'
+[0.928s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/package.sh'
+[0.928s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/package.bash'
+[0.929s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/package.zsh'
+[0.929s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/colcon-core/packages/mapviz)
+[0.929s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/mapviz_plugins' with build type 'ament_cmake'
+[0.930s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/mapviz_plugins'
+[0.930s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.930s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.934s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/multires_image' with build type 'ament_cmake'
+[0.935s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/multires_image'
+[0.935s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.935s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.938s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/tile_map' with build type 'ament_cmake'
+[0.938s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/tile_map'
+[0.938s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.938s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.946s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/path_publisher': PYTHONPATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/path_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_publisher build --build-base /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/path_publisher/build install --record /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/path_publisher/install.log --single-version-externally-managed install_data
+[0.950s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_plugins': CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_plugins -- -j20 -l20
+[0.957s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/multires_image': CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/multires_image -- -j20 -l20
+[0.962s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map': CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map -- -j20 -l20
+[1.118s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map' returned '0': CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map -- -j20 -l20
+[1.120s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map': CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map
+[1.131s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tile_map)
+[1.132s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map' for CMake module files
+[1.133s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map' for CMake config files
+[1.135s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map' returned '0': CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/tile_map
+[1.135s] Level 1:colcon.colcon_core.shell:create_environment_hook('tile_map', 'cmake_prefix_path')
+[1.135s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/hook/cmake_prefix_path.ps1'
+[1.136s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/hook/cmake_prefix_path.dsv'
+[1.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/hook/cmake_prefix_path.sh'
+[1.137s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib'
+[1.137s] Level 1:colcon.colcon_core.shell:create_environment_hook('tile_map', 'ld_library_path_lib')
+[1.138s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/hook/ld_library_path_lib.ps1'
+[1.138s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/hook/ld_library_path_lib.dsv'
+[1.138s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/hook/ld_library_path_lib.sh'
+[1.139s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/bin'
+[1.139s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib/pkgconfig/tile_map.pc'
+[1.139s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib/python3.10/site-packages'
+[1.139s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/bin'
+[1.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/package.ps1'
+[1.140s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/package.dsv'
+[1.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/package.sh'
+[1.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/package.bash'
+[1.142s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/package.zsh'
+[1.142s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/colcon-core/packages/tile_map)
+[1.143s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tile_map)
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map' for CMake module files
+[1.144s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map' for CMake config files
+[1.144s] Level 1:colcon.colcon_core.shell:create_environment_hook('tile_map', 'cmake_prefix_path')
+[1.144s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/hook/cmake_prefix_path.ps1'
+[1.144s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/hook/cmake_prefix_path.dsv'
+[1.145s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/hook/cmake_prefix_path.sh'
+[1.145s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib'
+[1.146s] Level 1:colcon.colcon_core.shell:create_environment_hook('tile_map', 'ld_library_path_lib')
+[1.146s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/hook/ld_library_path_lib.ps1'
+[1.146s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/hook/ld_library_path_lib.dsv'
+[1.147s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/hook/ld_library_path_lib.sh'
+[1.147s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/bin'
+[1.147s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib/pkgconfig/tile_map.pc'
+[1.147s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib/python3.10/site-packages'
+[1.148s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/bin'
+[1.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/package.ps1'
+[1.149s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/package.dsv'
+[1.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/package.sh'
+[1.151s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/package.bash'
+[1.151s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/tile_map/package.zsh'
+[1.151s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/share/colcon-core/packages/tile_map)
+[1.155s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/multires_image' returned '0': CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/multires_image -- -j20 -l20
+[1.157s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/multires_image': CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/multires_image
+[1.173s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_plugins' returned '0': CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_plugins -- -j20 -l20
+[1.175s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_plugins': CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_plugins
+[1.177s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(multires_image)
+[1.178s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image' for CMake module files
+[1.178s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/multires_image' returned '0': CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/multires_image
+[1.179s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image' for CMake config files
+[1.180s] Level 1:colcon.colcon_core.shell:create_environment_hook('multires_image', 'cmake_prefix_path')
+[1.180s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/hook/cmake_prefix_path.ps1'
+[1.181s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/hook/cmake_prefix_path.dsv'
+[1.182s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/hook/cmake_prefix_path.sh'
+[1.183s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib'
+[1.183s] Level 1:colcon.colcon_core.shell:create_environment_hook('multires_image', 'ld_library_path_lib')
+[1.184s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/hook/ld_library_path_lib.ps1'
+[1.184s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/hook/ld_library_path_lib.dsv'
+[1.185s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/hook/ld_library_path_lib.sh'
+[1.186s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/bin'
+[1.186s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib/pkgconfig/multires_image.pc'
+[1.186s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib/python3.10/site-packages'
+[1.187s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/bin'
+[1.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/package.ps1'
+[1.193s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/package.dsv'
+[1.196s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/package.sh'
+[1.198s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/package.bash'
+[1.199s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/package.zsh'
+[1.200s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/colcon-core/packages/multires_image)
+[1.200s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(multires_image)
+[1.201s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image' for CMake module files
+[1.202s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image' for CMake config files
+[1.202s] Level 1:colcon.colcon_core.shell:create_environment_hook('multires_image', 'cmake_prefix_path')
+[1.202s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/hook/cmake_prefix_path.ps1'
+[1.203s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/hook/cmake_prefix_path.dsv'
+[1.203s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/hook/cmake_prefix_path.sh'
+[1.203s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib'
+[1.204s] Level 1:colcon.colcon_core.shell:create_environment_hook('multires_image', 'ld_library_path_lib')
+[1.204s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/hook/ld_library_path_lib.ps1'
+[1.204s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/hook/ld_library_path_lib.dsv'
+[1.204s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/hook/ld_library_path_lib.sh'
+[1.205s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/bin'
+[1.205s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib/pkgconfig/multires_image.pc'
+[1.205s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib/python3.10/site-packages'
+[1.205s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/bin'
+[1.206s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/package.ps1'
+[1.206s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/package.dsv'
+[1.207s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/package.sh'
+[1.207s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/package.bash'
+[1.207s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/multires_image/package.zsh'
+[1.208s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/share/colcon-core/packages/multires_image)
+[1.210s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mapviz_plugins)
+[1.210s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins' for CMake module files
+[1.211s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_plugins' returned '0': CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_plugins
+[1.211s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins' for CMake config files
+[1.212s] Level 1:colcon.colcon_core.shell:create_environment_hook('mapviz_plugins', 'cmake_prefix_path')
+[1.212s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/hook/cmake_prefix_path.ps1'
+[1.212s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/hook/cmake_prefix_path.dsv'
+[1.213s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/hook/cmake_prefix_path.sh'
+[1.213s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib'
+[1.213s] Level 1:colcon.colcon_core.shell:create_environment_hook('mapviz_plugins', 'ld_library_path_lib')
+[1.214s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/hook/ld_library_path_lib.ps1'
+[1.214s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/hook/ld_library_path_lib.dsv'
+[1.214s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/hook/ld_library_path_lib.sh'
+[1.215s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/bin'
+[1.215s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib/pkgconfig/mapviz_plugins.pc'
+[1.215s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib/python3.10/site-packages'
+[1.215s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/bin'
+[1.216s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/package.ps1'
+[1.216s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/package.dsv'
+[1.217s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/package.sh'
+[1.217s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/package.bash'
+[1.218s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/package.zsh'
+[1.219s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/colcon-core/packages/mapviz_plugins)
+[1.219s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mapviz_plugins)
+[1.219s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins' for CMake module files
+[1.220s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins' for CMake config files
+[1.220s] Level 1:colcon.colcon_core.shell:create_environment_hook('mapviz_plugins', 'cmake_prefix_path')
+[1.221s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/hook/cmake_prefix_path.ps1'
+[1.221s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/hook/cmake_prefix_path.dsv'
+[1.222s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/hook/cmake_prefix_path.sh'
+[1.223s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib'
+[1.223s] Level 1:colcon.colcon_core.shell:create_environment_hook('mapviz_plugins', 'ld_library_path_lib')
+[1.223s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/hook/ld_library_path_lib.ps1'
+[1.224s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/hook/ld_library_path_lib.dsv'
+[1.224s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/hook/ld_library_path_lib.sh'
+[1.224s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/bin'
+[1.224s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib/pkgconfig/mapviz_plugins.pc'
+[1.225s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib/python3.10/site-packages'
+[1.225s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/bin'
+[1.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/package.ps1'
+[1.226s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/package.dsv'
+[1.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/package.sh'
+[1.227s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/package.bash'
+[1.227s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/mapviz_plugins/package.zsh'
+[1.227s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/share/colcon-core/packages/mapviz_plugins)
+[1.310s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher' for CMake module files
+[1.311s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/path_publisher' returned '0': PYTHONPATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/path_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_publisher build --build-base /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/path_publisher/build install --record /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/path_publisher/install.log --single-version-externally-managed install_data
+[1.311s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher' for CMake config files
+[1.312s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/lib'
+[1.312s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/bin'
+[1.312s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/lib/pkgconfig/path_publisher.pc'
+[1.312s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/lib/python3.10/site-packages'
+[1.312s] Level 1:colcon.colcon_core.shell:create_environment_hook('path_publisher', 'pythonpath')
+[1.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/share/path_publisher/hook/pythonpath.ps1'
+[1.313s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/share/path_publisher/hook/pythonpath.dsv'
+[1.313s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/share/path_publisher/hook/pythonpath.sh'
+[1.314s] Level 1:colcon.colcon_core.environment:checking '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/bin'
+[1.314s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(path_publisher)
+[1.314s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/share/path_publisher/package.ps1'
+[1.314s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/share/path_publisher/package.dsv'
+[1.315s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/share/path_publisher/package.sh'
+[1.315s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/share/path_publisher/package.bash'
+[1.315s] INFO:colcon.colcon_core.shell:Creating package script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/share/path_publisher/package.zsh'
+[1.316s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/share/colcon-core/packages/path_publisher)
+[1.316s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.316s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.316s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.316s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.321s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.322s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.322s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.334s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.335s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/local_setup.ps1'
+[1.336s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/_local_setup_util_ps1.py'
+[1.337s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/setup.ps1'
+[1.339s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/local_setup.sh'
+[1.340s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/_local_setup_util_sh.py'
+[1.341s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/setup.sh'
+[1.342s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/local_setup.bash'
+[1.342s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/setup.bash'
+[1.343s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/local_setup.zsh'
+[1.343s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/setup.zsh'

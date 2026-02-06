@@ -13,7 +13,7 @@ from sensor_msgs.msg import NavSatFix
 # Function to send bash commands to the rover
 def send_bash_command_via_ssh(command, host):
     if host == 'orin':
-        rover_ip_addr = '192.168.1.16'
+        rover_ip_addr = '192.168.153.55'
         rover_username = 'orinnx'
         rover_password = 'pw'
     else:
@@ -32,13 +32,17 @@ def send_bash_command_via_ssh(command, host):
 def display_video(stream_url, stream_id, resolution):
     if stream_id == 1:
         position = '-left 0 -top 0'
+        window_title = "Left_mirror"
     elif stream_id == 2:
         position = '-left 715 -top 0' 
+        window_title = "Right_mirror"
     elif stream_id == 3:
         position = '-left 0 -top 550'
+        window_title = "Front"
     else:
         position = '-left 715 -top 550'
-    ffplay_command = f"ffplay -fflags nobuffer -flags low_delay -i {stream_url} -window_title 'Stream {stream_id}' {position} -x 665 -y 500"
+        window_title = "360-degree_camera"
+    ffplay_command = f"ffplay -fflags nobuffer -flags low_delay -i {stream_url} -window_title {window_title} {position} -x 665 -y 500"
     process = subprocess.Popen(ffplay_command, shell=True)
     return process
 
@@ -46,12 +50,16 @@ def display_video(stream_url, stream_id, resolution):
 def update_video_settings(resolution, bitrate,stream_id,stream_url): 
     if stream_id == 1:
         video_num = 0
+        
     elif stream_id == 2:
         video_num = 2
+        
     elif stream_id == 3:
         video_num = 0
+        
     else:
         video_num = 2
+        
     bash_command = f"ffmpeg -f v4l2 -framerate 15 -video_size {resolution} -pixel_format mjpeg -i /dev/video{video_num} -c:v libx264 -b:v {bitrate}k -preset ultrafast -tune zerolatency -f mpegts {stream_url}"
     # Send the bash command to the rover
     if stream_id <= 2:
@@ -73,7 +81,7 @@ class MarsRoverGUI(QWidget):
 
         # Set up the window
         self.setWindowTitle("Mars Rover Video Stream Viewer")
-        self.setGeometry(1200, 0, 300, 1200)
+        self.setGeometry(1200, 0, 180, 1200)
         self.move(1618,0)
 
         # Main Layout (Vertical stack for the whole window)
@@ -83,7 +91,7 @@ class MarsRoverGUI(QWidget):
         self.ip_label = QLabel("Base Station IP Address:")
         self.ip_input = QLineEdit(self)     
         self.ip_input.setPlaceholderText("Enter IP Address")
-        self.ip_input.setText("192.168.1.18")  # Default IP
+        self.ip_input.setText("192.168.153.100")  # Default IP
 
         # Layout for IP Address
         ip_layout = QHBoxLayout()
@@ -120,7 +128,15 @@ class MarsRoverGUI(QWidget):
         stream_layout = QVBoxLayout()
 
         # Stream label
-        stream_label = QLabel(f"Stream {stream_id}")
+        #stream_label = QLabel(f"Stream {stream_id}")
+        if stream_id == 4:
+            stream_label = QLabel("360-degree_camera")
+        elif stream_id == 3:
+            stream_label = QLabel("Front")
+        elif stream_id == 1:
+            stream_label = QLabel("Left_mirror")
+        else:
+            stream_label = QLabel("Right_mirror")
         stream_layout.addWidget(stream_label)
 
         # Dropdown for resolution
@@ -202,22 +218,44 @@ class MarsRoverGUI(QWidget):
 
     def stop_ffmpeg_streams_via_ssh(self, host):
         if host == 'orin':
-            rover_ip_addr = '192.168.1.16'
+            # rover_ip_addr = '192.168.1.16'
+            rover_ip_addr = '192.168.153.55'
             rover_username = 'orinnx'
             rover_password = 'pw'
         else:
-            rover_ip_addr = '192.168.1.17'
+            # rover_ip_addr = '192.168.1.17'
+            rover_ip_addr = '192.168.153.136'
             rover_username = 'orangepi'
             rover_password = 'orangepi'
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh.connect(rover_ip_addr, username=rover_username, password=rover_password)
-        
-        kill_cmd = "pkill -f ffmpeg"
-        stdin, stdout, stderr = ssh.exec_command(kill_cmd)
-        print(stdout.read().decode())
-        print(stderr.read().decode())
-        ssh.close()
+        try:
+            print(f"Attempting SSH connection to {rover_ip_addr}...")
+            ssh.connect(
+                rover_ip_addr, 
+                username=rover_username, 
+                password=rover_password,
+                timeout=5  # Set timeout for connection attempt
+            )
+            
+            kill_cmd = "pkill -f ffmpeg"
+            stdin, stdout, stderr = ssh.exec_command(kill_cmd, timeout=5)  # Add timeout for command execution
+
+            stdout_output = stdout.read().decode()
+            stderr_output = stderr.read().decode()
+
+            print("STDOUT:", stdout_output)
+            print("STDERR:", stderr_output)
+
+        except (paramiko.ssh_exception.NoValidConnectionsError, 
+                paramiko.ssh_exception.AuthenticationException, 
+                paramiko.ssh_exception.SSHException, 
+                socket.timeout) as e:
+            print(f"SSH connection to {rover_ip_addr} failed: {e}")
+
+        finally:
+            ssh.close()
+            print(f"SSH connection to {rover_ip_addr} closed.")
         
     def closeEvent(self, event):
         #Stop all streams when window is closed
@@ -228,18 +266,19 @@ class MarsRoverGUI(QWidget):
 
             if reply == QMessageBox.Yes:
                 print("Closing application. Stopping all streams...")
+                stop_ffplay_command = "pkill -f ffmpeg"
+                process = subprocess.Popen(stop_ffplay_command, shell=True)
+
                 self.stop_ffmpeg_streams_via_ssh('orin')
                 self.stop_ffmpeg_streams_via_ssh('opi')
 
-                stop_ffplay_command = "pkill -f ffmpeg"
-                process = subprocess.Popen(stop_ffplay_command, shell=True)
                 event.accept()
                 
             else:
                 event.ignore()
 
     def update_gps_data(self, lat, long, alt, accu):
-        self.gps_label.setText(f"GPS Data:\nLatitude: {lat}\nLongitude: {long}\nAltitude: {alt}\nAccuracy: {accu}")
+        self.gps_label.setText(f"GPS Data:\nLatitude: {lat}\nLongitude: {long}\nAltitude: {alt}\nAccuracy(m): {accu}")
 
 class GPSSubscriber(Node):
     def __init__(self, gui_callback):
@@ -253,7 +292,7 @@ class GPSSubscriber(Node):
         lon = msg.longitude
         alt = msg.altitude
         accuracy = msg.position_covariance[0]  # Example: extracting accuracy
-        print(f"In node, my values are: {lat} {lon} {alt} {accuracy}")
+      #  print(f"In node, my values are: {lat} {lon} {alt} {accuracy}")
         self.gui_callback(lat, lon, alt, accuracy)
 
 def run_gps_ros_node(gui_window):
@@ -263,8 +302,6 @@ def run_gps_ros_node(gui_window):
     rclpy.spin(gps_node)
     gps_node.destroy_node()
     rclpy.shutdown()
-
-def 
 
 def main(args=None):
     app = QApplication(sys.argv)

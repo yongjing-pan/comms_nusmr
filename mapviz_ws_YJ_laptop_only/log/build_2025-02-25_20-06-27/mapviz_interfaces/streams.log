@@ -1,0 +1,22 @@
+[0.013s] Invoking command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble /usr/bin/cmake --build /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz_interfaces -- -j20 -l20
+[0.069s] [  3%] Built target mapviz_interfaces__cpp
+[0.070s] [ 12%] Built target mapviz_interfaces__rosidl_generator_c
+[0.082s] [ 12%] Built target ament_cmake_python_copy_mapviz_interfaces
+[0.099s] [ 22%] Built target mapviz_interfaces__rosidl_typesupport_introspection_c
+[0.102s] [ 32%] Built target mapviz_interfaces__rosidl_typesupport_cpp
+[0.102s] [ 41%] Built target mapviz_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.103s] [ 51%] Built target mapviz_interfaces__rosidl_typesupport_c
+[0.106s] [ 61%] Built target mapviz_interfaces__rosidl_typesupport_introspection_cpp
+[0.107s] [ 70%] Built target mapviz_interfaces__rosidl_typesupport_fastrtps_c
+[0.135s] [ 70%] Built target mapviz_interfaces
+[0.159s] [ 74%] Built target mapviz_interfaces__py
+[0.187s] [ 80%] Built target mapviz_interfaces__rosidl_generator_py
+[0.215s] [ 93%] Built target mapviz_interfaces__rosidl_typesupport_c__pyext
+[0.215s] [ 93%] Built target mapviz_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.217s] [100%] Built target mapviz_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.337s] running egg_info
+[0.337s] writing mapviz_interfaces.egg-info/PKG-INFO
+[0.337s] writing dependency_links to mapviz_interfaces.egg-info/dependency_links.txt
+[0.337s] writing top-level names to mapviz_interfaces.egg-info/top_level.txt
+[0.339s] reading manifest file 'mapviz_interfaces.egg-info/SOURCES.txt'
+[0.339s] writing manifest file 'mapviz_interfaces.egg-info/SOURCES.txt'

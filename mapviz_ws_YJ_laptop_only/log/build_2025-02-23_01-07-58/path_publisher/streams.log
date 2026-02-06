@@ -1,0 +1,25 @@
+[0.436s] Invoking command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/path_publisher': PYTHONPATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/path_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_publisher build --build-base /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/path_publisher/build install --record /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/path_publisher/install.log --single-version-externally-managed install_data
+[0.599s] running egg_info
+[0.600s] writing ../../build/path_publisher/path_publisher.egg-info/PKG-INFO
+[0.600s] writing dependency_links to ../../build/path_publisher/path_publisher.egg-info/dependency_links.txt
+[0.600s] writing entry points to ../../build/path_publisher/path_publisher.egg-info/entry_points.txt
+[0.600s] writing requirements to ../../build/path_publisher/path_publisher.egg-info/requires.txt
+[0.600s] writing top-level names to ../../build/path_publisher/path_publisher.egg-info/top_level.txt
+[0.601s] reading manifest file '../../build/path_publisher/path_publisher.egg-info/SOURCES.txt'
+[0.602s] writing manifest file '../../build/path_publisher/path_publisher.egg-info/SOURCES.txt'
+[0.602s] running build
+[0.602s] running build_py
+[0.602s] copying path_publisher/draw_circle.py -> /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/path_publisher/build/lib/path_publisher
+[0.602s] running install
+[0.602s] running install_lib
+[0.602s] copying /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/path_publisher/build/lib/path_publisher/draw_circle.py -> /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/lib/python3.10/site-packages/path_publisher
+[0.603s] byte-compiling /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/lib/python3.10/site-packages/path_publisher/draw_circle.py to draw_circle.cpython-310.pyc
+[0.603s] running install_data
+[0.603s] running install_egg_info
+[0.604s] removing '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/lib/python3.10/site-packages/path_publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[0.604s] Copying ../../build/path_publisher/path_publisher.egg-info to /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/lib/python3.10/site-packages/path_publisher-0.0.0-py3.10.egg-info
+[0.605s] running install_scripts
+[0.618s] Installing draw_circle script to /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/lib/path_publisher
+[0.618s] Installing my_node script to /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/lib/path_publisher
+[0.618s] writing list of installed files to '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/path_publisher/install.log'
+[0.633s] Invoked command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/src/path_publisher' returned '0': PYTHONPATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/path_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/path_publisher build --build-base /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/path_publisher/build install --record /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/path_publisher/install.log --single-version-externally-managed install_data

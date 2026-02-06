@@ -1,0 +1,68 @@
+[0.011s] Invoking command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz': CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz -- -j20 -l20
+[0.116s] [ 94%] Built target rqt_mapviz
+[0.153s] [100%] Built target mapviz
+[0.169s] Invoked command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz' returned '0': CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz -- -j20 -l20
+[0.172s] Invoking command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz': CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz
+[0.181s] -- Install configuration: ""
+[0.181s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/include/mapviz
+[0.181s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/include/mapviz/video_writer.h
+[0.182s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/include/mapviz/rqt_mapviz.h
+[0.182s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/include/mapviz/select_service_dialog.h
+[0.182s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/include/mapviz/widgets.h
+[0.182s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/include/mapviz/mapviz_application.h
+[0.182s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/include/mapviz/config_item.h
+[0.182s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/include/mapviz/stopwatch.h
+[0.182s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/include/mapviz/select_frame_dialog.h
+[0.183s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/include/mapviz/color_button.h
+[0.183s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/include/mapviz/mapviz_plugin.h
+[0.183s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/include/mapviz/map_canvas.h
+[0.183s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib/mapviz/mapviz
+[0.183s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib/librqt_mapviz.a
+[0.183s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch
+[0.183s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/mapviz.launch.xml
+[0.183s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/build
+[0.183s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/build/.built_by
+[0.183s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/build/COLCON_IGNORE
+[0.183s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/install
+[0.183s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/install/_local_setup_util_ps1.py
+[0.184s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/install/_local_setup_util_sh.py
+[0.184s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/install/setup.sh
+[0.184s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/install/setup.zsh
+[0.184s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/install/setup.bash
+[0.184s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/install/.colcon_install_layout
+[0.184s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/install/setup.ps1
+[0.184s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/install/local_setup.zsh
+[0.185s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/install/local_setup.ps1
+[0.185s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/install/COLCON_IGNORE
+[0.185s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/install/local_setup.sh
+[0.185s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/install/local_setup.bash
+[0.185s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/log
+[0.186s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/log/latest
+[0.187s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/log/build_2025-02-24_22-25-38
+[0.187s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/log/build_2025-02-24_22-25-38/logger_all.log
+[0.187s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/log/build_2025-02-24_22-25-38/events.log
+[0.187s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/log/latest_build
+[0.188s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/log/COLCON_IGNORE
+[0.188s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/launch/mapviz.launch.py
+[0.188s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/plugin.xml
+[0.188s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/environment/library_path.sh
+[0.188s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/environment/library_path.dsv
+[0.189s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/ament_index/resource_index/package_run_dependencies/mapviz
+[0.189s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/ament_index/resource_index/parent_prefix_path/mapviz
+[0.189s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/environment/ament_prefix_path.sh
+[0.189s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/environment/ament_prefix_path.dsv
+[0.189s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/environment/path.sh
+[0.189s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/environment/path.dsv
+[0.190s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/local_setup.bash
+[0.190s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/local_setup.sh
+[0.191s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/local_setup.zsh
+[0.191s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/local_setup.dsv
+[0.191s] -- Installing: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/package.dsv
+[0.192s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/ament_index/resource_index/packages/mapviz
+[0.192s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.193s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.193s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/cmake/ament_cmake_export_libraries-extras.cmake
+[0.194s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/cmake/mapvizConfig.cmake
+[0.195s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/cmake/mapvizConfig-version.cmake
+[0.196s] -- Up-to-date: /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/share/mapviz/package.xml
+[0.196s] Invoked command in '/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz' returned '0': CMAKE_PREFIX_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/path_publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_interfaces/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/tile_map/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/multires_image/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz_plugins/lib:/home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/install/mapviz/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/yongjing-ub22/comms_nusmr/mapviz_ws_YJ_laptop_only/build/mapviz

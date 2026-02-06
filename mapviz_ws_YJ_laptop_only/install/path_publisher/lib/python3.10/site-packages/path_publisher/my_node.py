@@ -4,6 +4,9 @@ from sensor_msgs.msg import NavSatFix
 from nav_msgs.msg import Path
 from geometry_msgs.msg import PoseStamped
 import utm  # Install using: pip install utm
+from visualization_msgs.msg import Marker
+from geometry_msgs.msg import Point
+import math
 
 class GNSSPathPublisher(Node):
     def __init__(self):
@@ -24,7 +27,7 @@ class GNSSPathPublisher(Node):
         self.path = Path()
         self.path.header.frame_id = "map"
 
-        self.MAX_PATH_LENGTH = 100  # Adjust as needed
+        self.MAX_PATH_LENGTH = 1000  # Adjust as needed
 
     def callback(self, msg):
         """ Callback function to update and publish path """
@@ -34,14 +37,19 @@ class GNSSPathPublisher(Node):
             print(f"Latitude: {msg.latitude}")
 
             pose = PoseStamped()
-            pose.header.stamp = msg.header.stamp
+            pose.header.stamp = self.get_clock().now().to_msg()  
             pose.header.frame_id = "map"
 
             # Store UTM values in Pose
-            pose.pose.position.x = msg.latitude - 1.2987358
-            pose.pose.position.y = msg.longitude - 103.7715786
+            # pose.pose.position.x = msg.latitude - 1.2987358
+            # pose.pose.position.y = msg.longitude - 103.7715786
             # pose.pose.position.x = 0.0
             # pose.pose.position.y = 0.0
+            # pose.pose.position.x = msg.latitude
+            # pose.pose.position.y = msg.longitude
+            default_x, default_y, _, _ = utm.from_latlon(1.2987358, 103.7715786)
+            pose.pose.position.x = utm_x - default_x
+            pose.pose.position.y = utm_y - default_y
 
             # Append to path and publish
             self.path.poses.append(pose)
@@ -50,12 +58,13 @@ class GNSSPathPublisher(Node):
                 self.path.poses.pop(0)  # Remove the oldest pose
 
             self.path.header.stamp = self.get_clock().now().to_msg()
+            self.path.header.frame_id = "map"  # Ensure consistent frame
             self.path_publisher.publish(self.path)
 
             self.get_logger().info(f'Updated path with point: ({pose.pose.position.x}, {pose.pose.position.y})')
-            self.get_logger().info(f'Time stamp: ({self.path.header.stamp})')
-            self.get_logger().info(f'No. of poses: ({len(self.path.poses)})')
-            print(self.path.poses)
+            # self.get_logger().info(f'Time stamp: ({self.path.header.stamp})')
+            # self.get_logger().info(f'No. of poses: ({len(self.path.poses)})')
+            # print(self.path.poses)
 
 
 

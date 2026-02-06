@@ -9,6 +9,7 @@ setup.py
 ../../build/path_publisher/path_publisher.egg-info/top_level.txt
 ../../build/path_publisher/path_publisher.egg-info/zip-safe
 path_publisher/__init__.py
+path_publisher/draw_circle.py
 path_publisher/my_node.py
 resource/path_publisher
 test/test_copyright.py
